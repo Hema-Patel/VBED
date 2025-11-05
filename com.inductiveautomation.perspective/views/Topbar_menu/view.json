@@ -1,0 +1,248 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "width": 1891
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Image"
+                },
+                "position": {
+                  "basis": "162px"
+                },
+                "props": {
+                  "source": "\n"
+                },
+                "type": "ia.display.image"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "613px"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#FFFFFF",
+                        "fontFamily": "inherit",
+                        "fontSize": 35,
+                        "fontWeight": "900"
+                      },
+                      "text": "Energy Monitoring"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "1385px"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Label"
+                        },
+                        "position": {
+                          "basis": "158px"
+                        },
+                        "propConfig": {
+                          "props.text": {
+                            "binding": {
+                              "config": {
+                                "expression": "dateFormat(now(), \"hh:mm a\")\r\n"
+                              },
+                              "type": "expr"
+                            }
+                          }
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#FFFFFF",
+                            "fontFamily": "inherit",
+                            "fontSize": 20
+                          }
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_0"
+                    },
+                    "position": {
+                      "basis": "613px"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Label"
+                        },
+                        "position": {
+                          "basis": "379px"
+                        },
+                        "propConfig": {
+                          "props.text": {
+                            "binding": {
+                              "config": {
+                                "expression": "dateFormat(now(), \"EEEE, MMMM dd, yyyy\")\r\n"
+                              },
+                              "type": "expr"
+                            }
+                          }
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#FFFFFF",
+                            "fontFamily": "inherit",
+                            "fontSize": 20
+                          }
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_1"
+                    },
+                    "position": {
+                      "basis": "613px"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_0"
+                },
+                "position": {
+                  "basis": "333px"
+                },
+                "props": {
+                  "direction": "column"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "basis": "87px"
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#1C446F",
+                "margin": 0
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "HorizontalMenu"
+                },
+                "position": {
+                  "basis": "1891px"
+                },
+                "props": {
+                  "items": [
+                    {
+                      "enabled": true,
+                      "icon": {
+                        "path": ""
+                      },
+                      "items": [],
+                      "label": "Overview",
+                      "style": {
+                        "classes": "",
+                        "color": "#000000",
+                        "fontFamily": "inherit",
+                        "fontSize": 15
+                      },
+                      "target": "/"
+                    },
+                    {
+                      "enabled": true,
+                      "icon": {
+                        "color": "",
+                        "path": ""
+                      },
+                      "items": [],
+                      "label": "Period Comparison",
+                      "style": {
+                        "classes": "",
+                        "color": "#000000",
+                        "fontFamily": "inherit",
+                        "fontSize": 15
+                      },
+                      "target": "http://www.google.com"
+                    },
+                    {
+                      "enabled": true,
+                      "icon": {
+                        "path": ""
+                      },
+                      "items": [],
+                      "label": "Equipment_Analysis",
+                      "style": {
+                        "classes": "",
+                        "color": "#000000",
+                        "fontFamily": "inherit",
+                        "fontSize": 15
+                      },
+                      "target": "/equipment_analysis"
+                    }
+                  ]
+                },
+                "type": "ia.navigation.horizontalmenu"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_1"
+            },
+            "position": {
+              "basis": "39px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "height": 124,
+          "width": "100%"
+        },
+        "props": {
+          "direction": "column"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

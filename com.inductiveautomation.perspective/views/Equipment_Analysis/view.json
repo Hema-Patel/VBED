@@ -1,0 +1,3044 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1020,
+      "width": 1621
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "61px"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "143.2px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15,
+                                    "margin": 5
+                                  },
+                                  "text": "Krones Ergobloc L"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "198px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "72px"
+                            },
+                            "propConfig": {
+                              "props.style.backgroundColor": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({[default]Varun_Beverages_Energy_Monitoring/Krones_Ergobloc_L/Running_Status}, \"#4CAF50\", \"#F44336\")\r\n"
+                                  },
+                                  "type": "expr"
+                                }
+                              },
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({[default]Varun_Beverages_Energy_Monitoring/Krones_Ergobloc_L/Running_Status}, \"Running\", \"Stopped\")\r\n"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#FFFFFF",
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer"
+                        },
+                        "position": {
+                          "basis": "39px"
+                        },
+                        "props": {
+                          "style": {
+                            "borderBottomLeftRadius": "",
+                            "borderBottomRightRadius": "",
+                            "borderColor": "#D5D5D547",
+                            "borderStyle": "solid",
+                            "borderTopLeftRadius": "",
+                            "borderTopRightRadius": "",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "143.2px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15,
+                                    "margin": 5
+                                  },
+                                  "text": "Consumption"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "144.4px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "103px"
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Krones_Ergobloc_L/Power_kW"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "{value} + \"kW\"",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#FFFFFF",
+                                "color": "#0000AC",
+                                "fontWeight": "700",
+                                "margin": 0
+                              },
+                              "textStyle": {
+                                "fontFamily": "inherit",
+                                "fontSize": 20
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_0"
+                        },
+                        "position": {
+                          "basis": "43px"
+                        },
+                        "props": {
+                          "style": {
+                            "borderBottomLeftRadius": "",
+                            "borderBottomRightRadius": "",
+                            "borderColor": "#FFFFFF",
+                            "borderStyle": "solid",
+                            "borderTopLeftRadius": "",
+                            "borderTopRightRadius": "",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "143.2px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15,
+                                    "margin": 5
+                                  },
+                                  "text": "Efficiency"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "185.4px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "103px"
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Krones_Ergobloc_L/Efficiency_Percent"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "round({value},2) + \" \" + \"%\"",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#FFFFFF",
+                                "color": "#00AC00",
+                                "fontWeight": "700",
+                                "margin": 0
+                              },
+                              "textStyle": {
+                                "fontFamily": "inherit",
+                                "fontSize": 20
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_1"
+                        },
+                        "position": {
+                          "basis": "42px"
+                        },
+                        "props": {
+                          "style": {
+                            "borderColor": "#FFFFFF",
+                            "borderStyle": "solid",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Progress"
+                            },
+                            "position": {
+                              "basis": "287px"
+                            },
+                            "propConfig": {
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Krones_Ergobloc_L/Efficiency_Percent"
+                                  },
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "bar": {
+                                "color": "#0000AC"
+                              },
+                              "style": {
+                                "margin": 2
+                              }
+                            },
+                            "type": "ia.display.progress"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_2"
+                        },
+                        "position": {
+                          "basis": "17px"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_0"
+                    },
+                    "position": {
+                      "basis": "300px"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderBottomLeftRadius": 20,
+                        "borderBottomRightRadius": 20,
+                        "borderColor": "#AAAAAA",
+                        "borderStyle": "solid",
+                        "borderTopLeftRadius": 20,
+                        "borderTopRightRadius": 20,
+                        "borderWidth": 1,
+                        "margin": 5
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "meta": {
+                      "name": "FlexContainer_1"
+                    },
+                    "position": {
+                      "basis": "61px"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "143.2px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15,
+                                    "margin": 5
+                                  },
+                                  "text": "Compressor"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "198px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "72px"
+                            },
+                            "propConfig": {
+                              "props.style.backgroundColor": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({[default]Varun_Beverages_Energy_Monitoring/Utilities/Compressor/Running_Status}, \"#4CAF50\", \"#F44336\")\r\n"
+                                  },
+                                  "type": "expr"
+                                }
+                              },
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({[default]Varun_Beverages_Energy_Monitoring/Utilities/Compressor/Running_Status}, \"Running\", \"Stopped\")\r\n"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#FFFFFF",
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer"
+                        },
+                        "position": {
+                          "basis": "39px"
+                        },
+                        "props": {
+                          "style": {
+                            "borderBottomLeftRadius": "",
+                            "borderBottomRightRadius": "",
+                            "borderColor": "#D5D5D547",
+                            "borderStyle": "solid",
+                            "borderTopLeftRadius": "",
+                            "borderTopRightRadius": "",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "143.2px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15,
+                                    "margin": 5
+                                  },
+                                  "text": "Consumption"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "176px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "103px"
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Utilities/Compressor/Power_kW"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "round({value},2) + \" \" +\"kW\"",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#FFFFFF",
+                                "color": "#0000AC",
+                                "fontWeight": "700",
+                                "margin": 0
+                              },
+                              "textStyle": {
+                                "fontFamily": "inherit",
+                                "fontSize": 20
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_0"
+                        },
+                        "position": {
+                          "basis": "43px"
+                        },
+                        "props": {
+                          "style": {
+                            "borderBottomLeftRadius": "",
+                            "borderBottomRightRadius": "",
+                            "borderColor": "#FFFFFF",
+                            "borderStyle": "solid",
+                            "borderTopLeftRadius": "",
+                            "borderTopRightRadius": "",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "143.2px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15,
+                                    "margin": 5
+                                  },
+                                  "text": "Efficiency"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "185.4px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "103px"
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Utilities/Compressor/Efficiency_Percent"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "{value} + \" \" + \"%\"",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#FFFFFF",
+                                "color": "#00AC00",
+                                "fontWeight": "700",
+                                "margin": 0
+                              },
+                              "textStyle": {
+                                "fontFamily": "inherit",
+                                "fontSize": 20
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_1"
+                        },
+                        "position": {
+                          "basis": "42px"
+                        },
+                        "props": {
+                          "style": {
+                            "borderColor": "#FFFFFF",
+                            "borderStyle": "solid",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Progress"
+                            },
+                            "position": {
+                              "basis": "287px"
+                            },
+                            "propConfig": {
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Utilities/Compressor/Efficiency_Percent"
+                                  },
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "bar": {
+                                "color": "#0000AC"
+                              },
+                              "style": {
+                                "margin": 2
+                              }
+                            },
+                            "type": "ia.display.progress"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_2"
+                        },
+                        "position": {
+                          "basis": "17px"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_2"
+                    },
+                    "position": {
+                      "basis": "300px"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderBottomLeftRadius": 20,
+                        "borderBottomRightRadius": 20,
+                        "borderColor": "#AAAAAA",
+                        "borderStyle": "solid",
+                        "borderTopLeftRadius": 20,
+                        "borderTopRightRadius": 20,
+                        "borderWidth": 1,
+                        "margin": 5
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "meta": {
+                      "name": "FlexContainer_3"
+                    },
+                    "position": {
+                      "basis": "61px"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "143.2px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15,
+                                    "margin": 5
+                                  },
+                                  "text": "Air Conditioning"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "198px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "72px"
+                            },
+                            "propConfig": {
+                              "props.style.backgroundColor": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({[default]Varun_Beverages_Energy_Monitoring/Utilities/Air_Conditioning/Running_Status}, \"#4CAF50\", \"#F44336\")\r\n"
+                                  },
+                                  "type": "expr"
+                                }
+                              },
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({[default]Varun_Beverages_Energy_Monitoring/Utilities/Air_Conditioning/Running_Status}, \"Running\", \"Stopped\")\r\n"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#FFFFFF",
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer"
+                        },
+                        "position": {
+                          "basis": "39px"
+                        },
+                        "props": {
+                          "style": {
+                            "borderBottomLeftRadius": "",
+                            "borderBottomRightRadius": "",
+                            "borderColor": "#D5D5D547",
+                            "borderStyle": "solid",
+                            "borderTopLeftRadius": "",
+                            "borderTopRightRadius": "",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "143.2px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15,
+                                    "margin": 5
+                                  },
+                                  "text": "Consumption"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "176px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "103px"
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Utilities/Air_Conditioning/Power_kW"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "{value} +\" \" +  \"kW\"",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#FFFFFF",
+                                "color": "#0000AC",
+                                "fontWeight": "700",
+                                "margin": 0
+                              },
+                              "textStyle": {
+                                "fontFamily": "inherit",
+                                "fontSize": 20
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_0"
+                        },
+                        "position": {
+                          "basis": "43px"
+                        },
+                        "props": {
+                          "style": {
+                            "borderBottomLeftRadius": "",
+                            "borderBottomRightRadius": "",
+                            "borderColor": "#FFFFFF",
+                            "borderStyle": "solid",
+                            "borderTopLeftRadius": "",
+                            "borderTopRightRadius": "",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "143.2px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15,
+                                    "margin": 5
+                                  },
+                                  "text": "Efficiency"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "185.4px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "103px"
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Utilities/Air_Conditioning/Efficiency_Percent"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "{value} + \" \" + \"%\"",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#FFFFFF",
+                                "color": "#00AC00",
+                                "fontWeight": "700",
+                                "margin": 0
+                              },
+                              "textStyle": {
+                                "fontFamily": "inherit",
+                                "fontSize": 20
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_1"
+                        },
+                        "position": {
+                          "basis": "42px"
+                        },
+                        "props": {
+                          "style": {
+                            "borderColor": "#FFFFFF",
+                            "borderStyle": "solid",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Progress"
+                            },
+                            "position": {
+                              "basis": "287px"
+                            },
+                            "propConfig": {
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Utilities/Air_Conditioning/Efficiency_Percent"
+                                  },
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "bar": {
+                                "color": "#0000AC"
+                              },
+                              "style": {
+                                "margin": 2
+                              }
+                            },
+                            "type": "ia.display.progress"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_2"
+                        },
+                        "position": {
+                          "basis": "17px"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_4"
+                    },
+                    "position": {
+                      "basis": "300px"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderBottomLeftRadius": 20,
+                        "borderBottomRightRadius": 20,
+                        "borderColor": "#AAAAAA",
+                        "borderStyle": "solid",
+                        "borderTopLeftRadius": 20,
+                        "borderTopRightRadius": 20,
+                        "borderWidth": 1,
+                        "margin": 5
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "meta": {
+                      "name": "FlexContainer_5"
+                    },
+                    "position": {
+                      "basis": "61px"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "143.2px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15,
+                                    "margin": 5
+                                  },
+                                  "text": "Refrigeration"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "198px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "72px"
+                            },
+                            "propConfig": {
+                              "props.style.backgroundColor": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({[default]Varun_Beverages_Energy_Monitoring/Utilities/Refrigeration/Running_Status}, \"#4CAF50\", \"#F44336\")\r\n"
+                                  },
+                                  "type": "expr"
+                                }
+                              },
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({[default]Varun_Beverages_Energy_Monitoring/Utilities/Refrigeration/Running_Status}, \"Running\", \"Stopped\")\r\n"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#FFFFFF",
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer"
+                        },
+                        "position": {
+                          "basis": "39px"
+                        },
+                        "props": {
+                          "style": {
+                            "borderBottomLeftRadius": "",
+                            "borderBottomRightRadius": "",
+                            "borderColor": "#D5D5D547",
+                            "borderStyle": "solid",
+                            "borderTopLeftRadius": "",
+                            "borderTopRightRadius": "",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "143.2px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15,
+                                    "margin": 5
+                                  },
+                                  "text": "Consumption"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "131px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "103px"
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Utilities/Refrigeration/Power_kW"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "{value} + \" \" + \"kW\"",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#FFFFFF",
+                                "color": "#0000AC",
+                                "fontWeight": "700",
+                                "margin": 0
+                              },
+                              "textStyle": {
+                                "fontFamily": "inherit",
+                                "fontSize": 20
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_0"
+                        },
+                        "position": {
+                          "basis": "43px"
+                        },
+                        "props": {
+                          "style": {
+                            "borderBottomLeftRadius": "",
+                            "borderBottomRightRadius": "",
+                            "borderColor": "#FFFFFF",
+                            "borderStyle": "solid",
+                            "borderTopLeftRadius": "",
+                            "borderTopRightRadius": "",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "143.2px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15,
+                                    "margin": 5
+                                  },
+                                  "text": "Efficiency"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "185.4px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "103px"
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Utilities/Refrigeration/Efficiency_Percent"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "{value} + \" \" + \"%\"",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#FFFFFF",
+                                "color": "#00AC00",
+                                "fontWeight": "700",
+                                "margin": 0
+                              },
+                              "textStyle": {
+                                "fontFamily": "inherit",
+                                "fontSize": 20
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_1"
+                        },
+                        "position": {
+                          "basis": "42px"
+                        },
+                        "props": {
+                          "style": {
+                            "borderColor": "#FFFFFF",
+                            "borderStyle": "solid",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Progress"
+                            },
+                            "position": {
+                              "basis": "287px"
+                            },
+                            "propConfig": {
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Utilities/Refrigeration/Efficiency_Percent"
+                                  },
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "bar": {
+                                "color": "#0000AC"
+                              },
+                              "style": {
+                                "margin": 2
+                              }
+                            },
+                            "type": "ia.display.progress"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_2"
+                        },
+                        "position": {
+                          "basis": "17px"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_6"
+                    },
+                    "position": {
+                      "basis": "300px"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderBottomLeftRadius": 20,
+                        "borderBottomRightRadius": 20,
+                        "borderColor": "#AAAAAA",
+                        "borderStyle": "solid",
+                        "borderTopLeftRadius": 20,
+                        "borderTopRightRadius": 20,
+                        "borderWidth": 1,
+                        "margin": 5
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "meta": {
+                      "name": "FlexContainer_7"
+                    },
+                    "position": {
+                      "basis": "61px"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "143.2px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15,
+                                    "margin": 5
+                                  },
+                                  "text": "Packaging Line"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "198px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "72px"
+                            },
+                            "propConfig": {
+                              "props.style.backgroundColor": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({[default]Varun_Beverages_Energy_Monitoring/Packaging_Line/Running_Status}, \"#4CAF50\", \"#F44336\")\r\n"
+                                  },
+                                  "type": "expr"
+                                }
+                              },
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "if({[default]Varun_Beverages_Energy_Monitoring/Packaging_Line/Running_Status}, \"Running\", \"Stopped\")\r\n"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#FFFFFF",
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer"
+                        },
+                        "position": {
+                          "basis": "39px"
+                        },
+                        "props": {
+                          "style": {
+                            "borderBottomLeftRadius": "",
+                            "borderBottomRightRadius": "",
+                            "borderColor": "#D5D5D547",
+                            "borderStyle": "solid",
+                            "borderTopLeftRadius": "",
+                            "borderTopRightRadius": "",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "143.2px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15,
+                                    "margin": 5
+                                  },
+                                  "text": "Consumption"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "135px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "103px"
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Packaging_Line/Power_kW"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "{value} + \" \" + \"kW\"",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#FFFFFF",
+                                "color": "#0000AC",
+                                "fontWeight": "700",
+                                "margin": 0
+                              },
+                              "textStyle": {
+                                "fontFamily": "inherit",
+                                "fontSize": 20
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_0"
+                        },
+                        "position": {
+                          "basis": "43px"
+                        },
+                        "props": {
+                          "style": {
+                            "borderBottomLeftRadius": "",
+                            "borderBottomRightRadius": "",
+                            "borderColor": "#FFFFFF",
+                            "borderStyle": "solid",
+                            "borderTopLeftRadius": "",
+                            "borderTopRightRadius": "",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "143.2px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15,
+                                    "margin": 5
+                                  },
+                                  "text": "Efficiency"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "185.4px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "103px"
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Packaging_Line/Efficiency_Percent"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "round({value},2) + \" \" + \"%\"",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#FFFFFF",
+                                "color": "#00AC00",
+                                "fontWeight": "700",
+                                "margin": 0
+                              },
+                              "textStyle": {
+                                "fontFamily": "inherit",
+                                "fontSize": 20
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_1"
+                        },
+                        "position": {
+                          "basis": "42px"
+                        },
+                        "props": {
+                          "style": {
+                            "borderColor": "#FFFFFF",
+                            "borderStyle": "solid",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Progress"
+                            },
+                            "position": {
+                              "basis": "287px"
+                            },
+                            "propConfig": {
+                              "props.value": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Packaging_Line/Efficiency_Percent"
+                                  },
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "bar": {
+                                "color": "#0000AC"
+                              },
+                              "style": {
+                                "margin": 2
+                              }
+                            },
+                            "type": "ia.display.progress"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_2"
+                        },
+                        "position": {
+                          "basis": "17px"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_8"
+                    },
+                    "position": {
+                      "basis": "300px"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderBottomLeftRadius": 20,
+                        "borderBottomRightRadius": 20,
+                        "borderColor": "#AAAAAA",
+                        "borderStyle": "solid",
+                        "borderTopLeftRadius": 20,
+                        "borderTopRightRadius": 20,
+                        "borderWidth": 1,
+                        "margin": 5
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "meta": {
+                      "name": "FlexContainer_9"
+                    },
+                    "position": {
+                      "basis": "61px"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_0"
+                },
+                "position": {
+                  "basis": "1704px"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D547",
+                    "margin": 15
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_1"
+            },
+            "position": {
+              "basis": "203px"
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#D5D5D526"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "42px"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "595px"
+                            },
+                            "props": {
+                              "text": "Equipment-wise Energy Consumption ",
+                              "textStyle": {
+                                "color": "#000080",
+                                "fontFamily": "inherit",
+                                "fontSize": 20,
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer"
+                        },
+                        "position": {
+                          "basis": "63px"
+                        },
+                        "props": {
+                          "style": {
+                            "margin": 15
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "meta": {
+                          "name": "PowerChart"
+                        },
+                        "position": {
+                          "basis": "600px"
+                        },
+                        "props": {
+                          "config": {
+                            "measureOfTime": "minutes",
+                            "rangeEndDate": {
+                              "$": [
+                                "ts",
+                                0,
+                                1761634883374
+                              ],
+                              "$ts": 1761634881434
+                            },
+                            "rangeStartDate": {
+                              "$": [
+                                "ts",
+                                0,
+                                1761634883374
+                              ],
+                              "$ts": 1761634403034
+                            },
+                            "visibility": {
+                              "buttons": {
+                                "showAnnotationButton": false,
+                                "showFullscreenButton": false,
+                                "showMoreButton": false,
+                                "showPanZoomButton": false,
+                                "showRangeBrushButton": false,
+                                "showSettingsButton": false,
+                                "showXTraceButton": false
+                              }
+                            }
+                          },
+                          "interaction": {
+                            "chartZoomLevel": 1,
+                            "rangeZoomLevel": 1
+                          },
+                          "legend": {
+                            "visible": true
+                          },
+                          "pens": [
+                            {
+                              "axis": "",
+                              "data": {
+                                "aggregateMode": "default",
+                                "source": "histprov:INCHMYMESDEV:/drv:ignition-inchn-cg43874sl:default:/tag:varun_beverages_energy_monitoring/energy_sources/dg_set/energy_kwh"
+                              },
+                              "display": {
+                                "breakLine": true,
+                                "interpolation": "curveLinear",
+                                "radius": 3,
+                                "styles": {
+                                  "highlighted": {
+                                    "fill": {
+                                      "color": "#63BEA2",
+                                      "opacity": 1
+                                    },
+                                    "stroke": {
+                                      "color": "#63BEA2",
+                                      "dashArray": 0,
+                                      "opacity": 1,
+                                      "width": 1
+                                    }
+                                  },
+                                  "muted": {
+                                    "fill": {
+                                      "color": "#63BEA2",
+                                      "opacity": 0.4
+                                    },
+                                    "stroke": {
+                                      "color": "#63BEA2",
+                                      "dashArray": 0,
+                                      "opacity": 0.4,
+                                      "width": 1
+                                    }
+                                  },
+                                  "normal": {
+                                    "fill": {
+                                      "color": "#63BEA2",
+                                      "opacity": 0.8
+                                    },
+                                    "stroke": {
+                                      "color": "#63BEA2",
+                                      "dashArray": 0,
+                                      "opacity": 0.8,
+                                      "width": 1
+                                    }
+                                  },
+                                  "selected": {
+                                    "fill": {
+                                      "color": "#63BEA2",
+                                      "opacity": 1
+                                    },
+                                    "stroke": {
+                                      "color": "#63BEA2",
+                                      "dashArray": 0,
+                                      "opacity": 1,
+                                      "width": 1
+                                    }
+                                  }
+                                },
+                                "type": "line"
+                              },
+                              "enabled": true,
+                              "name": "energy_kwh",
+                              "plot": 0,
+                              "selectable": true,
+                              "visible": true
+                            },
+                            {
+                              "axis": "",
+                              "data": {
+                                "aggregateMode": "default",
+                                "source": "histprov:INCHMYMESDEV:/drv:ignition-inchn-cg43874sl:default:/tag:varun_beverages_energy_monitoring/energy_sources/main_line/energy_kwh"
+                              },
+                              "display": {
+                                "breakLine": true,
+                                "interpolation": "curveLinear",
+                                "radius": 3,
+                                "styles": {
+                                  "highlighted": {
+                                    "fill": {
+                                      "color": "#FC8D62",
+                                      "opacity": 1
+                                    },
+                                    "stroke": {
+                                      "color": "#FC8D62",
+                                      "dashArray": 0,
+                                      "opacity": 1,
+                                      "width": 1
+                                    }
+                                  },
+                                  "muted": {
+                                    "fill": {
+                                      "color": "#FC8D62",
+                                      "opacity": 0.4
+                                    },
+                                    "stroke": {
+                                      "color": "#FC8D62",
+                                      "dashArray": 0,
+                                      "opacity": 0.4,
+                                      "width": 1
+                                    }
+                                  },
+                                  "normal": {
+                                    "fill": {
+                                      "color": "#FC8D62",
+                                      "opacity": 0.8
+                                    },
+                                    "stroke": {
+                                      "color": "#FC8D62",
+                                      "dashArray": 0,
+                                      "opacity": 0.8,
+                                      "width": 1
+                                    }
+                                  },
+                                  "selected": {
+                                    "fill": {
+                                      "color": "#FC8D62",
+                                      "opacity": 1
+                                    },
+                                    "stroke": {
+                                      "color": "#FC8D62",
+                                      "dashArray": 0,
+                                      "opacity": 1,
+                                      "width": 1
+                                    }
+                                  }
+                                },
+                                "type": "line"
+                              },
+                              "enabled": true,
+                              "name": "main_line/energy_kwh",
+                              "plot": 0,
+                              "selectable": true,
+                              "visible": true
+                            },
+                            {
+                              "axis": "",
+                              "data": {
+                                "aggregateMode": "default",
+                                "source": "histprov:INCHMYMESDEV:/drv:ignition-inchn-cg43874sl:default:/tag:varun_beverages_energy_monitoring/energy_sources/solar_panel/energy_kwh"
+                              },
+                              "display": {
+                                "breakLine": true,
+                                "interpolation": "curveLinear",
+                                "radius": 3,
+                                "styles": {
+                                  "highlighted": {
+                                    "fill": {
+                                      "color": "#8DA0CB",
+                                      "opacity": 1
+                                    },
+                                    "stroke": {
+                                      "color": "#8DA0CB",
+                                      "dashArray": 0,
+                                      "opacity": 1,
+                                      "width": 1
+                                    }
+                                  },
+                                  "muted": {
+                                    "fill": {
+                                      "color": "#8DA0CB",
+                                      "opacity": 0.4
+                                    },
+                                    "stroke": {
+                                      "color": "#8DA0CB",
+                                      "dashArray": 0,
+                                      "opacity": 0.4,
+                                      "width": 1
+                                    }
+                                  },
+                                  "normal": {
+                                    "fill": {
+                                      "color": "#8DA0CB",
+                                      "opacity": 0.8
+                                    },
+                                    "stroke": {
+                                      "color": "#8DA0CB",
+                                      "dashArray": 0,
+                                      "opacity": 0.8,
+                                      "width": 1
+                                    }
+                                  },
+                                  "selected": {
+                                    "fill": {
+                                      "color": "#8DA0CB",
+                                      "opacity": 1
+                                    },
+                                    "stroke": {
+                                      "color": "#8DA0CB",
+                                      "dashArray": 0,
+                                      "opacity": 1,
+                                      "width": 1
+                                    }
+                                  }
+                                },
+                                "type": "line"
+                              },
+                              "enabled": true,
+                              "name": "solar_panel/energy_kwh",
+                              "plot": 0,
+                              "selectable": true,
+                              "visible": true
+                            }
+                          ],
+                          "timeAxis": {
+                            "color": "#808080"
+                          }
+                        },
+                        "type": "ia.chart.powerchart"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "1596px"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "overflow": "hidden"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_2"
+                },
+                "position": {
+                  "basis": "1558px"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_2"
+            },
+            "position": {
+              "basis": "438px"
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#D5D5D526",
+                "borderColor": "#D5D5D5",
+                "borderStyle": "solid",
+                "borderWidth": 1
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "37px"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label"
+                                    },
+                                    "position": {
+                                      "basis": "636px"
+                                    },
+                                    "props": {
+                                      "text": "Top Consumers\n",
+                                      "textStyle": {
+                                        "color": "#000000",
+                                        "fontFamily": "inherit",
+                                        "fontSize": 20,
+                                        "fontWeight": "500"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "FlexContainer_0"
+                                },
+                                "position": {
+                                  "basis": "741px"
+                                },
+                                "type": "ia.container.flex"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "32px"
+                            },
+                            "props": {
+                              "style": {
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "637px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "margin": 5
+                                  },
+                                  "text": "Krones Ergobloc L",
+                                  "textStyle": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "122px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Krones_Ergobloc_L/Energy_kWh"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "round({value},2) + \" \" + \"kWh\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#0000AC",
+                                    "fontWeight": "bold"
+                                  },
+                                  "textStyle": {
+                                    "fontFamily": "inherit",
+                                    "fontSize": 20
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "55px"
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#D5D5D545",
+                                "borderColor": "#D5D5D5",
+                                "borderStyle": "solid",
+                                "borderWidth": 0.5,
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "645px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "margin": 5
+                                  },
+                                  "text": "Compressor",
+                                  "textStyle": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "86px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Utilities/Compressor/Energy_kWh"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value} + \" \" + \"kWh\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#0000AC",
+                                    "fontWeight": "bold"
+                                  },
+                                  "textStyle": {
+                                    "fontFamily": "inherit",
+                                    "fontSize": 20
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_1"
+                            },
+                            "position": {
+                              "basis": "55px"
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#D5D5D545",
+                                "borderColor": "#D5D5D5",
+                                "borderStyle": "solid",
+                                "borderWidth": 0.5,
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "643px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "margin": 5
+                                  },
+                                  "text": "Refrigeration",
+                                  "textStyle": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "111px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Utilities/Refrigeration/Energy_kWh"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "round({value},2)+ \" \" +\"kWh\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#0000AC",
+                                    "fontWeight": "bold"
+                                  },
+                                  "textStyle": {
+                                    "fontFamily": "inherit",
+                                    "fontSize": 20
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_2"
+                            },
+                            "position": {
+                              "basis": "55px"
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#D5D5D545",
+                                "borderColor": "#D5D5D5",
+                                "borderStyle": "solid",
+                                "borderWidth": 0.5,
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "644px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "margin": 5
+                                  },
+                                  "text": "Packaging Line",
+                                  "textStyle": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "118px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Packaging_Line/Energy_kWh"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "round({value},2) + \" \" + \"kWh\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#0000AC",
+                                    "fontWeight": "bold"
+                                  },
+                                  "textStyle": {
+                                    "fontFamily": "inherit",
+                                    "fontSize": 20
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_3"
+                            },
+                            "position": {
+                              "basis": "55px"
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#D5D5D545",
+                                "borderColor": "#D5D5D5",
+                                "borderStyle": "solid",
+                                "borderWidth": 0.5,
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "643px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "margin": 5
+                                  },
+                                  "text": "Air Conditioning",
+                                  "textStyle": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "105px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Utilities/Air_Conditioning/Energy_kWh"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "round({value},2) + \" \" + \"kWh\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#0000AC",
+                                    "fontWeight": "bold"
+                                  },
+                                  "textStyle": {
+                                    "fontFamily": "inherit",
+                                    "fontSize": 20
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_4"
+                            },
+                            "position": {
+                              "basis": "55px"
+                            },
+                            "props": {
+                              "style": {
+                                "backgroundColor": "#D5D5D545",
+                                "borderColor": "#D5D5D5",
+                                "borderStyle": "solid",
+                                "borderWidth": 0.5,
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_0"
+                        },
+                        "position": {
+                          "basis": "784px"
+                        },
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "borderColor": "#555555",
+                            "borderStyle": "solid",
+                            "borderWidth": 1,
+                            "margin": 10
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_0"
+                    },
+                    "position": {
+                      "basis": "585px"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_0"
+                },
+                "position": {
+                  "basis": "849px"
+                },
+                "props": {
+                  "direction": "column"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "636px"
+                            },
+                            "props": {
+                              "text": "Efficiency Rankings\n",
+                              "textStyle": {
+                                "color": "#000000",
+                                "fontFamily": "inherit",
+                                "fontSize": 20,
+                                "fontWeight": "500"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_0"
+                        },
+                        "position": {
+                          "basis": "741px"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "32px"
+                    },
+                    "props": {
+                      "style": {
+                        "margin": 5
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Label"
+                        },
+                        "position": {
+                          "basis": "664px"
+                        },
+                        "props": {
+                          "style": {
+                            "margin": 5
+                          },
+                          "text": "Krones Ergobloc L",
+                          "textStyle": {
+                            "color": "#000000",
+                            "fontFamily": "inherit",
+                            "fontSize": 15
+                          }
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "Label_0"
+                        },
+                        "position": {
+                          "basis": "86px"
+                        },
+                        "propConfig": {
+                          "props.text": {
+                            "binding": {
+                              "config": {
+                                "fallbackDelay": 2.5,
+                                "mode": "direct",
+                                "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Krones_Ergobloc_L/Efficiency_Percent"
+                              },
+                              "transforms": [
+                                {
+                                  "expression": "round({value},2) + \" \" + \"%\"",
+                                  "type": "expression"
+                                }
+                              ],
+                              "type": "tag"
+                            }
+                          }
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#0000AC",
+                            "fontWeight": "bold"
+                          },
+                          "textStyle": {
+                            "fontFamily": "inherit",
+                            "fontSize": 20
+                          }
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_0"
+                    },
+                    "position": {
+                      "basis": "55px"
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#D5D5D545",
+                        "borderColor": "#D5D5D5",
+                        "borderStyle": "solid",
+                        "borderWidth": 0.5,
+                        "margin": 5
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Label"
+                        },
+                        "position": {
+                          "basis": "664px"
+                        },
+                        "props": {
+                          "style": {
+                            "margin": 5
+                          },
+                          "text": "Compressor",
+                          "textStyle": {
+                            "color": "#000000",
+                            "fontFamily": "inherit",
+                            "fontSize": 15
+                          }
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "Label_0"
+                        },
+                        "position": {
+                          "basis": "86px"
+                        },
+                        "propConfig": {
+                          "props.text": {
+                            "binding": {
+                              "config": {
+                                "fallbackDelay": 2.5,
+                                "mode": "direct",
+                                "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Utilities/Compressor/Efficiency_Percent"
+                              },
+                              "transforms": [
+                                {
+                                  "expression": "{value} + \" \" + \"%\"",
+                                  "type": "expression"
+                                }
+                              ],
+                              "type": "tag"
+                            }
+                          }
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#0000AC",
+                            "fontWeight": "bold"
+                          },
+                          "textStyle": {
+                            "fontFamily": "inherit",
+                            "fontSize": 20
+                          }
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_1"
+                    },
+                    "position": {
+                      "basis": "55px"
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#D5D5D545",
+                        "borderColor": "#D5D5D5",
+                        "borderStyle": "solid",
+                        "borderWidth": 0.5,
+                        "margin": 5
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Label"
+                        },
+                        "position": {
+                          "basis": "664px"
+                        },
+                        "props": {
+                          "style": {
+                            "margin": 5
+                          },
+                          "text": "Refrigeration",
+                          "textStyle": {
+                            "color": "#000000",
+                            "fontFamily": "inherit",
+                            "fontSize": 15
+                          }
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "Label_0"
+                        },
+                        "position": {
+                          "basis": "86px"
+                        },
+                        "propConfig": {
+                          "props.text": {
+                            "binding": {
+                              "config": {
+                                "fallbackDelay": 2.5,
+                                "mode": "direct",
+                                "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Utilities/Refrigeration/Efficiency_Percent"
+                              },
+                              "transforms": [
+                                {
+                                  "expression": "{value} + \" \" + \"%\"",
+                                  "type": "expression"
+                                }
+                              ],
+                              "type": "tag"
+                            }
+                          }
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#0000AC",
+                            "fontWeight": "bold"
+                          },
+                          "textStyle": {
+                            "fontFamily": "inherit",
+                            "fontSize": 20
+                          }
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_2"
+                    },
+                    "position": {
+                      "basis": "55px"
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#D5D5D545",
+                        "borderColor": "#D5D5D5",
+                        "borderStyle": "solid",
+                        "borderWidth": 0.5,
+                        "margin": 5
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Label"
+                        },
+                        "position": {
+                          "basis": "664px"
+                        },
+                        "props": {
+                          "style": {
+                            "margin": 5
+                          },
+                          "text": "Packaging Line",
+                          "textStyle": {
+                            "color": "#000000",
+                            "fontFamily": "inherit",
+                            "fontSize": 15
+                          }
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "Label_0"
+                        },
+                        "position": {
+                          "basis": "86px"
+                        },
+                        "propConfig": {
+                          "props.text": {
+                            "binding": {
+                              "config": {
+                                "fallbackDelay": 2.5,
+                                "mode": "direct",
+                                "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Packaging_Line/Efficiency_Percent"
+                              },
+                              "transforms": [
+                                {
+                                  "expression": "round({value},2) + \" \" + \"%\"",
+                                  "type": "expression"
+                                }
+                              ],
+                              "type": "tag"
+                            }
+                          }
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#0000AC",
+                            "fontWeight": "bold"
+                          },
+                          "textStyle": {
+                            "fontFamily": "inherit",
+                            "fontSize": 20
+                          }
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_3"
+                    },
+                    "position": {
+                      "basis": "55px"
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#D5D5D545",
+                        "borderColor": "#D5D5D5",
+                        "borderStyle": "solid",
+                        "borderWidth": 0.5,
+                        "margin": 5
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Label"
+                        },
+                        "position": {
+                          "basis": "664px"
+                        },
+                        "props": {
+                          "style": {
+                            "margin": 5
+                          },
+                          "text": "Air Conditioning",
+                          "textStyle": {
+                            "color": "#000000",
+                            "fontFamily": "inherit",
+                            "fontSize": 15
+                          }
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "Label_0"
+                        },
+                        "position": {
+                          "basis": "86px"
+                        },
+                        "propConfig": {
+                          "props.text": {
+                            "binding": {
+                              "config": {
+                                "fallbackDelay": 2.5,
+                                "mode": "direct",
+                                "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Utilities/Air_Conditioning/Efficiency_Percent"
+                              },
+                              "transforms": [
+                                {
+                                  "expression": "{value} + \" \" + \"%\"",
+                                  "type": "expression"
+                                }
+                              ],
+                              "type": "tag"
+                            }
+                          }
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#0000AC",
+                            "fontWeight": "bold"
+                          },
+                          "textStyle": {
+                            "fontFamily": "inherit",
+                            "fontSize": 20
+                          }
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_4"
+                    },
+                    "position": {
+                      "basis": "55px"
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#D5D5D545",
+                        "borderColor": "#D5D5D5",
+                        "borderStyle": "solid",
+                        "borderWidth": 0.5,
+                        "margin": 5
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_1"
+                },
+                "position": {
+                  "basis": "701px"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "borderColor": "#555555",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                    "margin": 10
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_5"
+            },
+            "position": {
+              "basis": "432px"
+            },
+            "props": {
+              "style": {
+                "borderColor": "#D5D5D5",
+                "borderStyle": "solid",
+                "borderWidth": 1
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "height": 1100,
+          "width": "100%"
+        },
+        "props": {
+          "direction": "column"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

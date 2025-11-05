@@ -1,0 +1,584 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "width": 1225
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "42px"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "595px"
+                            },
+                            "props": {
+                              "text": "Main Power Consumption Comparision",
+                              "textStyle": {
+                                "color": "#000080",
+                                "fontFamily": "inherit",
+                                "fontSize": 20,
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "EWEC_Container"
+                        },
+                        "position": {
+                          "basis": "63px"
+                        },
+                        "props": {
+                          "style": {
+                            "margin": 15
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "meta": {
+                          "name": "TimeSeriesChart"
+                        },
+                        "position": {
+                          "basis": "400px"
+                        },
+                        "propConfig": {
+                          "props.series[0].data": {
+                            "binding": {
+                              "config": {
+                                "aggregate": "MinMax",
+                                "avoidScanClassValidation": true,
+                                "dateRange": {
+                                  "mostRecent": "1",
+                                  "mostRecentUnits": "HOUR"
+                                },
+                                "enableValueCache": true,
+                                "ignoreBadQuality": false,
+                                "polling": {
+                                  "enabled": true,
+                                  "rate": "5"
+                                },
+                                "preventInterpolation": false,
+                                "returnFormat": "Wide",
+                                "returnSize": {
+                                  "numRows": "100",
+                                  "type": "FIXED"
+                                },
+                                "tags": [
+                                  {
+                                    "path": "[default]Varun_Beverages_Energy_Monitoring/Energy_Sources/Main_Line/Energy_kWh"
+                                  }
+                                ],
+                                "valueFormat": "DATASET"
+                              },
+                              "type": "tag-history"
+                            }
+                          },
+                          "props.series[1].data": {
+                            "binding": {
+                              "config": {
+                                "aggregate": "MinMax",
+                                "avoidScanClassValidation": true,
+                                "dateRange": {
+                                  "endDate": "dateArithmetic((\"2025-10-28 00:00:00\"), 655, \"minute\")\r",
+                                  "startDate": "dateArithmetic((\"2025-10-28 00:00:00\"), 645, \"minute\")\r "
+                                },
+                                "enableValueCache": true,
+                                "ignoreBadQuality": false,
+                                "preventInterpolation": false,
+                                "returnFormat": "Wide",
+                                "returnSize": {
+                                  "numRows": "100",
+                                  "type": "FIXED"
+                                },
+                                "tags": [
+                                  {
+                                    "path": "[INCHMYMESDEV/ignition-inchn-cg4374x7v:default]varun_beverages_energy_monitoring/energy_sources/main_line/energy_kwh"
+                                  }
+                                ],
+                                "valueFormat": "DATASET"
+                              },
+                              "type": "tag-history"
+                            }
+                          }
+                        },
+                        "props": {
+                          "defaultStyles": {
+                            "colorScheme": "Spectral"
+                          },
+                          "legend": {
+                            "visible": true
+                          },
+                          "series": [
+                            {
+                              "name": "Today"
+                            },
+                            {
+                              "name": ""
+                            }
+                          ],
+                          "timeAxis": {
+                            "color": "#808080"
+                          },
+                          "xTrace": {
+                            "infoBox": {
+                              "fill": {
+                                "color": "#FFE8CC"
+                              },
+                              "font": {
+                                "color": "#000000"
+                              },
+                              "stroke": {
+                                "color": "#000000"
+                              }
+                            },
+                            "line": {
+                              "color": "#000000"
+                            }
+                          }
+                        },
+                        "type": "ia.chart.timeseries"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "1596px"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "overflow": "hidden"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "Powerchart_Container"
+                },
+                "position": {
+                  "basis": "1558px"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "Trend_Container"
+            },
+            "position": {
+              "basis": "346px"
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#D5D5D526",
+                "borderColor": "#D5D5D5",
+                "borderStyle": "solid",
+                "borderWidth": 1
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "42px"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "595px"
+                            },
+                            "props": {
+                              "text": "Solar Energy  Comparision",
+                              "textStyle": {
+                                "color": "#000080",
+                                "fontFamily": "inherit",
+                                "fontSize": 20,
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "EWEC_Container"
+                        },
+                        "position": {
+                          "basis": "63px"
+                        },
+                        "props": {
+                          "style": {
+                            "margin": 15
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "meta": {
+                          "name": "TimeSeriesChart"
+                        },
+                        "position": {
+                          "basis": "400px"
+                        },
+                        "propConfig": {
+                          "props.series[0].data": {
+                            "binding": {
+                              "config": {
+                                "aggregate": "MinMax",
+                                "avoidScanClassValidation": true,
+                                "dateRange": {
+                                  "mostRecent": "1",
+                                  "mostRecentUnits": "HOUR"
+                                },
+                                "enableValueCache": true,
+                                "ignoreBadQuality": false,
+                                "polling": {
+                                  "enabled": true,
+                                  "rate": "5"
+                                },
+                                "preventInterpolation": false,
+                                "returnFormat": "Wide",
+                                "returnSize": {
+                                  "numRows": "100",
+                                  "type": "FIXED"
+                                },
+                                "tags": [
+                                  {
+                                    "path": "[default]Varun_Beverages_Energy_Monitoring/Energy_Sources/Solar_Panel/Energy_kWh"
+                                  }
+                                ],
+                                "valueFormat": "DATASET"
+                              },
+                              "type": "tag-history"
+                            }
+                          },
+                          "props.series[1].data": {
+                            "binding": {
+                              "config": {
+                                "aggregate": "MinMax",
+                                "avoidScanClassValidation": true,
+                                "dateRange": {
+                                  "endDate": "dateArithmetic((\"2025-10-28 00:00:00\"), 525, \"minute\")\r ",
+                                  "startDate": "dateArithmetic((\"2025-10-28 00:00:00\"), 522, \"minute\")\r "
+                                },
+                                "enableValueCache": true,
+                                "ignoreBadQuality": false,
+                                "preventInterpolation": false,
+                                "returnFormat": "Wide",
+                                "returnSize": {
+                                  "numRows": "100",
+                                  "type": "FIXED"
+                                },
+                                "tags": [
+                                  {
+                                    "path": "[INCHMYMESDEV/ignition-inchn-cg4374x7v:default]varun_beverages_energy_monitoring/energy_sources/solar_panel/energy_kwh"
+                                  }
+                                ],
+                                "valueFormat": "DATASET"
+                              },
+                              "type": "tag-history"
+                            }
+                          }
+                        },
+                        "props": {
+                          "legend": {
+                            "visible": true
+                          },
+                          "series": [
+                            {
+                              "name": "Boiler"
+                            },
+                            {
+                              "name": ""
+                            }
+                          ],
+                          "xTrace": {
+                            "infoBox": {
+                              "fill": {
+                                "color": "#FFE8CC"
+                              },
+                              "stroke": {
+                                "color": "#000000"
+                              }
+                            }
+                          }
+                        },
+                        "type": "ia.chart.timeseries"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "1596px"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "overflow": "hidden"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "Powerchart_Container"
+                },
+                "position": {
+                  "basis": "1558px"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "Trend_Container_0"
+            },
+            "position": {
+              "basis": "346px"
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#D5D5D526",
+                "borderColor": "#D5D5D5",
+                "borderStyle": "solid",
+                "borderWidth": 1
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "42px"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "595px"
+                            },
+                            "props": {
+                              "text": "DG Energy Comparision",
+                              "textStyle": {
+                                "color": "#000080",
+                                "fontFamily": "inherit",
+                                "fontSize": 20,
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "EWEC_Container"
+                        },
+                        "position": {
+                          "basis": "63px"
+                        },
+                        "props": {
+                          "style": {
+                            "margin": 15
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "meta": {
+                          "name": "TimeSeriesChart"
+                        },
+                        "position": {
+                          "basis": "400px"
+                        },
+                        "propConfig": {
+                          "props.series[0].data": {
+                            "binding": {
+                              "config": {
+                                "aggregate": "MinMax",
+                                "avoidScanClassValidation": true,
+                                "dateRange": {
+                                  "mostRecent": "1",
+                                  "mostRecentUnits": "HOUR"
+                                },
+                                "enableValueCache": true,
+                                "ignoreBadQuality": false,
+                                "polling": {
+                                  "enabled": true,
+                                  "rate": "5"
+                                },
+                                "preventInterpolation": false,
+                                "returnFormat": "Wide",
+                                "returnSize": {
+                                  "numRows": "100",
+                                  "type": "FIXED"
+                                },
+                                "tags": [
+                                  {
+                                    "path": "[default]Varun_Beverages_Energy_Monitoring/Energy_Sources/DG_Set/Energy_kWh"
+                                  }
+                                ],
+                                "valueFormat": "DATASET"
+                              },
+                              "type": "tag-history"
+                            }
+                          },
+                          "props.series[1].data": {
+                            "binding": {
+                              "config": {
+                                "aggregate": "MinMax",
+                                "avoidScanClassValidation": true,
+                                "dateRange": {
+                                  "endDate": "dateArithmetic((\"2025-10-28 00:00:00\"), 529, \"minute\")\r ",
+                                  "startDate": "dateArithmetic((\"2025-10-28 00:00:00\"), 522, \"minute\")\r "
+                                },
+                                "enableValueCache": true,
+                                "ignoreBadQuality": false,
+                                "preventInterpolation": false,
+                                "returnFormat": "Wide",
+                                "returnSize": {
+                                  "numRows": "100",
+                                  "type": "FIXED"
+                                },
+                                "tags": [
+                                  {
+                                    "path": "[INCHMYMESDEV/ignition-inchn-cg4374x7v:default]varun_beverages_energy_monitoring/energy_sources/dg_set/energy_kwh"
+                                  }
+                                ],
+                                "valueFormat": "DATASET"
+                              },
+                              "type": "tag-history"
+                            }
+                          }
+                        },
+                        "props": {
+                          "legend": {
+                            "visible": true
+                          },
+                          "series": [
+                            {
+                              "name": "Live"
+                            },
+                            {
+                              "name": ""
+                            }
+                          ]
+                        },
+                        "type": "ia.chart.timeseries"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "1596px"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "overflow": "hidden"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "Powerchart_Container"
+                },
+                "position": {
+                  "basis": "1558px"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "Trend_Container_1"
+            },
+            "position": {
+              "basis": "346px"
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#D5D5D526",
+                "borderColor": "#D5D5D5",
+                "borderStyle": "solid",
+                "borderWidth": 1
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "height": "99%",
+          "width": "99%"
+        },
+        "props": {
+          "direction": "column",
+          "style": {
+            "backgroundColor": "#FFFFFF",
+            "margin": 0
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

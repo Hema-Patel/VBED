@@ -1,0 +1,3017 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1580,
+      "width": 1589
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "61px"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "210px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000080",
+                                    "fontFamily": "Arial",
+                                    "fontSize": 18,
+                                    "margin": 10
+                                  },
+                                  "text": "Total Consumption"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "214px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Icon"
+                                    },
+                                    "position": {
+                                      "basis": "31px"
+                                    },
+                                    "props": {
+                                      "color": "#555555",
+                                      "path": "material/offline_bolt",
+                                      "style": {
+                                        "fontSize": 18
+                                      }
+                                    },
+                                    "type": "ia.display.icon"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "200px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "overflow": "hidden"
+                                  }
+                                },
+                                "type": "ia.container.flex"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "34px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer"
+                        },
+                        "position": {
+                          "basis": "52px"
+                        },
+                        "props": {
+                          "style": {
+                            "margin": 5
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "57px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "87px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Calculated_Metrics/Total_Equipment_Power_kW"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "round({value},2)",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#00AC00",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 35,
+                                    "margin": 5
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "171px"
+                            },
+                            "props": {
+                              "direction": "column"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "FlexContainer_1"
+                            },
+                            "position": {
+                              "basis": "21.7px"
+                            },
+                            "props": {
+                              "alignItems": "flex-start",
+                              "direction": "column",
+                              "justify": "center"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_0"
+                        },
+                        "position": {
+                          "basis": "64px"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_0"
+                    },
+                    "position": {
+                      "basis": "360px"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderBottomLeftRadius": 50,
+                        "borderBottomRightRadius": 50,
+                        "borderColor": "#D5D5D596",
+                        "borderStyle": "solid",
+                        "borderTopLeftRadius": 50,
+                        "borderTopRightRadius": 50,
+                        "borderWidth": 1,
+                        "margin": 10
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "meta": {
+                      "name": "FlexContainer_3"
+                    },
+                    "position": {
+                      "basis": "26px"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "210px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000080",
+                                    "fontFamily": "Arial",
+                                    "fontSize": 18,
+                                    "margin": 10
+                                  },
+                                  "text": "Main + Solar"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "221px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Icon"
+                                    },
+                                    "position": {
+                                      "basis": "30px"
+                                    },
+                                    "props": {
+                                      "color": "#808080",
+                                      "path": "material/power_settings_new"
+                                    },
+                                    "type": "ia.display.icon"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "200px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "overflow": "hidden"
+                                  }
+                                },
+                                "type": "ia.container.flex"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "38px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer"
+                        },
+                        "position": {
+                          "basis": "52px"
+                        },
+                        "props": {
+                          "style": {
+                            "margin": 5
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "33px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "87px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "expression": "{[default]Varun_Beverages_Energy_Monitoring/Calculated_Metrics/Grid_Contribution_Percent}+{[default]Varun_Beverages_Energy_Monitoring/Calculated_Metrics/Solar_Contribution_Percent}"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "round({value},2)",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "expr"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#0000FF",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 35,
+                                    "margin": 5
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "189.3px"
+                            },
+                            "props": {
+                              "direction": "column"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "FlexContainer_1"
+                            },
+                            "position": {
+                              "basis": "21.7px"
+                            },
+                            "props": {
+                              "alignItems": "flex-start",
+                              "direction": "column",
+                              "justify": "center"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_0"
+                        },
+                        "position": {
+                          "basis": "64px"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_1"
+                    },
+                    "position": {
+                      "basis": "360px"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderBottomLeftRadius": 50,
+                        "borderBottomRightRadius": 50,
+                        "borderColor": "#D5D5D596",
+                        "borderStyle": "solid",
+                        "borderTopLeftRadius": 50,
+                        "borderTopRightRadius": 50,
+                        "borderWidth": 1,
+                        "margin": 10
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "meta": {
+                      "name": "FlexContainer_4"
+                    },
+                    "position": {
+                      "basis": "26px"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "123px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000080",
+                                    "fontFamily": "Arial",
+                                    "fontSize": 18,
+                                    "margin": 10
+                                  },
+                                  "text": "Solar Power"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "219px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Icon"
+                                    },
+                                    "position": {
+                                      "basis": "30px"
+                                    },
+                                    "props": {
+                                      "color": "#808080",
+                                      "path": "material/wb_sunny"
+                                    },
+                                    "type": "ia.display.icon"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "43px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "overflow": "hidden"
+                                  }
+                                },
+                                "type": "ia.container.flex"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "36px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer"
+                        },
+                        "position": {
+                          "basis": "52px"
+                        },
+                        "props": {
+                          "style": {
+                            "margin": 5
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "57px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "87px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Calculated_Metrics/Solar_Contribution_Percent"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "round({value},2) + \" \" + \"kW\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#FFAC47",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 35,
+                                    "margin": 5
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "171px"
+                            },
+                            "props": {
+                              "direction": "column"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "meta": {
+                              "name": "FlexContainer_1"
+                            },
+                            "position": {
+                              "basis": "21.7px"
+                            },
+                            "props": {
+                              "alignItems": "flex-start",
+                              "direction": "column",
+                              "justify": "center"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_0"
+                        },
+                        "position": {
+                          "basis": "64px"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_2"
+                    },
+                    "position": {
+                      "basis": "360px"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderBottomLeftRadius": 50,
+                        "borderBottomRightRadius": 50,
+                        "borderColor": "#D5D5D596",
+                        "borderStyle": "solid",
+                        "borderTopLeftRadius": 50,
+                        "borderTopRightRadius": 50,
+                        "borderWidth": 1,
+                        "margin": 10
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "meta": {
+                      "name": "FlexContainer_5"
+                    },
+                    "position": {
+                      "basis": "26px"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "123px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000080",
+                                    "fontFamily": "Arial",
+                                    "fontSize": 18,
+                                    "margin": 10
+                                  },
+                                  "text": "DG Power"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "216px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Icon"
+                                    },
+                                    "position": {
+                                      "basis": "30px"
+                                    },
+                                    "props": {
+                                      "color": "#808080",
+                                      "path": "material/battery_full"
+                                    },
+                                    "type": "ia.display.icon"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "28px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "overflow": "hidden"
+                                  }
+                                },
+                                "type": "ia.container.flex"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "37px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer"
+                        },
+                        "position": {
+                          "basis": "52px"
+                        },
+                        "props": {
+                          "style": {
+                            "margin": 5
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "73px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "87px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Calculated_Metrics/DG_Contribution_Percent"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "round({value},2) + \" \" + \"kW\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#FF4747",
+                                    "fontFamily": "Arial",
+                                    "fontSize": 35,
+                                    "margin": 5
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "156px"
+                            },
+                            "props": {
+                              "direction": "column"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_0"
+                        },
+                        "position": {
+                          "basis": "64px"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_6"
+                    },
+                    "position": {
+                      "basis": "360px"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderBottomLeftRadius": 50,
+                        "borderBottomRightRadius": 50,
+                        "borderColor": "#D5D5D596",
+                        "borderStyle": "solid",
+                        "borderTopLeftRadius": 50,
+                        "borderTopRightRadius": 50,
+                        "borderWidth": 1,
+                        "margin": 10
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "meta": {
+                      "name": "FlexContainer_7"
+                    },
+                    "position": {
+                      "basis": "26px"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "123px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000080",
+                                    "fontFamily": "Arial",
+                                    "fontSize": 18,
+                                    "margin": 10
+                                  },
+                                  "text": "Efficiency"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "207px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Icon"
+                                    },
+                                    "position": {
+                                      "basis": "30px"
+                                    },
+                                    "props": {
+                                      "color": "#808080",
+                                      "path": "material/trending_up"
+                                    },
+                                    "type": "ia.display.icon"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "32px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "overflow": "hidden"
+                                  }
+                                },
+                                "type": "ia.container.flex"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "42px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer"
+                        },
+                        "position": {
+                          "basis": "52px"
+                        },
+                        "props": {
+                          "style": {
+                            "margin": 5
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "71px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "87px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Calculated_Metrics/Overall_Plant_Efficiency_Percent"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value} + \"%\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#FF47FF",
+                                    "fontFamily": "Arial",
+                                    "fontSize": 35,
+                                    "margin": 5
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "156px"
+                            },
+                            "props": {
+                              "direction": "column"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_0"
+                        },
+                        "position": {
+                          "basis": "64px"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_8"
+                    },
+                    "position": {
+                      "basis": "360px"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderBottomLeftRadius": 50,
+                        "borderBottomRightRadius": 50,
+                        "borderColor": "#D5D5D596",
+                        "borderStyle": "solid",
+                        "borderTopLeftRadius": 50,
+                        "borderTopRightRadius": 50,
+                        "borderWidth": 1,
+                        "margin": 10
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_0"
+                },
+                "position": {
+                  "basis": "1704px"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#D5D5D547",
+                    "margin": 15
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_1"
+            },
+            "position": {
+              "basis": "186px"
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#D5D5D526"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "42px"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Label"
+                        },
+                        "position": {
+                          "basis": "290px"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#0000AC",
+                            "fontFamily": "inherit",
+                            "fontSize": 20
+                          },
+                          "text": "Energy Source Distribution"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "36px"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "meta": {
+                      "name": "PieChart"
+                    },
+                    "position": {
+                      "basis": "267px"
+                    },
+                    "propConfig": {
+                      "props.data[0].count": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Calculated_Metrics/Grid_Contribution_Percent"
+                          },
+                          "transforms": [
+                            {
+                              "expression": "round({value},2)",
+                              "type": "expression"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      },
+                      "props.data[1].count": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Calculated_Metrics/Solar_Contribution_Percent"
+                          },
+                          "transforms": [
+                            {
+                              "expression": "round({value},2)",
+                              "type": "expression"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      },
+                      "props.data[2].count": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Calculated_Metrics/DG_Contribution_Percent"
+                          },
+                          "transforms": [
+                            {
+                              "expression": "round({value},2)",
+                              "type": "expression"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      }
+                    },
+                    "props": {
+                      "colors": [
+                        "#3366CC",
+                        "#E69300",
+                        "#FF4747",
+                        "#00A9C6",
+                        "#E69300"
+                      ],
+                      "data": [
+                        {
+                          "flavor": "Main"
+                        },
+                        {
+                          "flavor": "Solar"
+                        },
+                        {
+                          "flavor": "DG"
+                        }
+                      ],
+                      "labels": {
+                        "align": false,
+                        "color": "#000000"
+                      },
+                      "legend": {
+                        "position": "right"
+                      },
+                      "legendLabelColor": "#000000",
+                      "sectionOutline": {
+                        "color": "#FFFFFF"
+                      },
+                      "selection": {
+                        "enabled": true
+                      },
+                      "style": {
+                        "margin": 5
+                      },
+                      "threeDimensional": true
+                    },
+                    "type": "ia.chart.pie"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_0"
+                },
+                "position": {
+                  "basis": "770px"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "overflow": "hidden"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "meta": {
+                  "name": "FlexContainer_1"
+                },
+                "position": {
+                  "basis": "49px"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "595px"
+                            },
+                            "props": {
+                              "text": "Energy Consumption Trend",
+                              "textStyle": {
+                                "color": "#000080",
+                                "fontFamily": "inherit",
+                                "fontSize": 20,
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer"
+                        },
+                        "position": {
+                          "basis": "63px"
+                        },
+                        "props": {
+                          "style": {
+                            "margin": 15
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "meta": {
+                          "name": "PowerChart_0"
+                        },
+                        "position": {
+                          "basis": "600px"
+                        },
+                        "props": {
+                          "config": {
+                            "measureOfTime": "minutes",
+                            "polling": {
+                              "enabled": true,
+                              "rate": 1000
+                            },
+                            "rangeEndDate": {
+                              "$": [
+                                "ts",
+                                0,
+                                1762343832853
+                              ],
+                              "$ts": 1762343830965
+                            },
+                            "rangeStartDate": {
+                              "$": [
+                                "ts",
+                                0,
+                                1762343832853
+                              ],
+                              "$ts": 1762343352565
+                            },
+                            "visibility": {
+                              "buttons": {
+                                "showAnnotationButton": false,
+                                "showFullscreenButton": false,
+                                "showMoreButton": false,
+                                "showPanZoomButton": false,
+                                "showRangeBrushButton": false,
+                                "showSettingsButton": false,
+                                "showXTraceButton": false
+                              }
+                            }
+                          },
+                          "interaction": {
+                            "chartZoomLevel": 1,
+                            "rangeZoomLevel": 1
+                          },
+                          "legend": {
+                            "visible": true
+                          },
+                          "pens": [
+                            {
+                              "axis": "",
+                              "data": {
+                                "aggregateMode": "default",
+                                "source": "histprov:INCHMYMESDEV:/drv:ignition-inchn-cg43874sl:default:/tag:varun_beverages_energy_monitoring/krones_ergobloc_l/energy_kwh"
+                              },
+                              "display": {
+                                "breakLine": true,
+                                "interpolation": "curveLinear",
+                                "radius": 3,
+                                "styles": {
+                                  "highlighted": {
+                                    "fill": {
+                                      "color": "#E78AC3",
+                                      "opacity": 1
+                                    },
+                                    "stroke": {
+                                      "color": "#E78AC3",
+                                      "dashArray": 0,
+                                      "opacity": 1,
+                                      "width": 1
+                                    }
+                                  },
+                                  "muted": {
+                                    "fill": {
+                                      "color": "#E78AC3",
+                                      "opacity": 0.4
+                                    },
+                                    "stroke": {
+                                      "color": "#E78AC3",
+                                      "dashArray": 0,
+                                      "opacity": 0.4,
+                                      "width": 1
+                                    }
+                                  },
+                                  "normal": {
+                                    "fill": {
+                                      "color": "#E78AC3",
+                                      "opacity": 0.8
+                                    },
+                                    "stroke": {
+                                      "color": "#E78AC3",
+                                      "dashArray": 0,
+                                      "opacity": 0.8,
+                                      "width": 1
+                                    }
+                                  },
+                                  "selected": {
+                                    "fill": {
+                                      "color": "#E78AC3",
+                                      "opacity": 1
+                                    },
+                                    "stroke": {
+                                      "color": "#E78AC3",
+                                      "dashArray": 0,
+                                      "opacity": 1,
+                                      "width": 1
+                                    }
+                                  }
+                                },
+                                "type": "line"
+                              },
+                              "enabled": true,
+                              "name": "energy_kwh",
+                              "plot": 0,
+                              "selectable": true,
+                              "visible": true
+                            },
+                            {
+                              "axis": "",
+                              "data": {
+                                "aggregateMode": "default",
+                                "source": "histprov:INCHMYMESDEV:/drv:ignition-inchn-cg43874sl:default:/tag:varun_beverages_energy_monitoring/packaging_line/energy_kwh"
+                              },
+                              "display": {
+                                "breakLine": true,
+                                "interpolation": "curveLinear",
+                                "radius": 3,
+                                "styles": {
+                                  "highlighted": {
+                                    "fill": {
+                                      "color": "#A6D854",
+                                      "opacity": 1
+                                    },
+                                    "stroke": {
+                                      "color": "#A6D854",
+                                      "dashArray": 0,
+                                      "opacity": 1,
+                                      "width": 1
+                                    }
+                                  },
+                                  "muted": {
+                                    "fill": {
+                                      "color": "#A6D854",
+                                      "opacity": 0.4
+                                    },
+                                    "stroke": {
+                                      "color": "#A6D854",
+                                      "dashArray": 0,
+                                      "opacity": 0.4,
+                                      "width": 1
+                                    }
+                                  },
+                                  "normal": {
+                                    "fill": {
+                                      "color": "#A6D854",
+                                      "opacity": 0.8
+                                    },
+                                    "stroke": {
+                                      "color": "#8DA0CB",
+                                      "dashArray": 0,
+                                      "opacity": 0.8,
+                                      "width": 1
+                                    }
+                                  },
+                                  "selected": {
+                                    "fill": {
+                                      "color": "#A6D854",
+                                      "opacity": 1
+                                    },
+                                    "stroke": {
+                                      "color": "#A6D854",
+                                      "dashArray": 0,
+                                      "opacity": 1,
+                                      "width": 1
+                                    }
+                                  }
+                                },
+                                "type": "line"
+                              },
+                              "enabled": true,
+                              "name": "packaging_line/energy_kwh",
+                              "plot": 0,
+                              "selectable": true,
+                              "visible": true
+                            },
+                            {
+                              "axis": "",
+                              "data": {
+                                "aggregateMode": "default",
+                                "source": "histprov:INCHMYMESDEV:/drv:ignition-inchn-cg43874sl:default:/tag:varun_beverages_energy_monitoring/utilities/air_conditioning/energy_kwh"
+                              },
+                              "display": {
+                                "breakLine": true,
+                                "interpolation": "curveLinear",
+                                "radius": 3,
+                                "styles": {
+                                  "highlighted": {
+                                    "fill": {
+                                      "color": "#FFD930",
+                                      "opacity": 1
+                                    },
+                                    "stroke": {
+                                      "color": "#FFD930",
+                                      "dashArray": 0,
+                                      "opacity": 1,
+                                      "width": 1
+                                    }
+                                  },
+                                  "muted": {
+                                    "fill": {
+                                      "color": "#FFD930",
+                                      "opacity": 0.4
+                                    },
+                                    "stroke": {
+                                      "color": "#FFD930",
+                                      "dashArray": 0,
+                                      "opacity": 0.4,
+                                      "width": 1
+                                    }
+                                  },
+                                  "normal": {
+                                    "fill": {
+                                      "color": "#FFD930",
+                                      "opacity": 0.8
+                                    },
+                                    "stroke": {
+                                      "color": "#FFD930",
+                                      "dashArray": 0,
+                                      "opacity": 0.8,
+                                      "width": 1
+                                    }
+                                  },
+                                  "selected": {
+                                    "fill": {
+                                      "color": "#FFD930",
+                                      "opacity": 1
+                                    },
+                                    "stroke": {
+                                      "color": "#FFD930",
+                                      "dashArray": 0,
+                                      "opacity": 1,
+                                      "width": 1
+                                    }
+                                  }
+                                },
+                                "type": "line"
+                              },
+                              "enabled": true,
+                              "name": "air_conditioning/energy_kwh",
+                              "plot": 0,
+                              "selectable": true,
+                              "visible": true
+                            },
+                            {
+                              "axis": "",
+                              "data": {
+                                "aggregateMode": "default",
+                                "source": "histprov:INCHMYMESDEV:/drv:ignition-inchn-cg43874sl:default:/tag:varun_beverages_energy_monitoring/utilities/compressor/energy_kwh"
+                              },
+                              "display": {
+                                "breakLine": true,
+                                "interpolation": "curveLinear",
+                                "radius": 3,
+                                "styles": {
+                                  "highlighted": {
+                                    "fill": {
+                                      "color": "#E78AC3",
+                                      "opacity": 1
+                                    },
+                                    "stroke": {
+                                      "color": "#E78AC3",
+                                      "dashArray": 0,
+                                      "opacity": 1,
+                                      "width": 1
+                                    }
+                                  },
+                                  "muted": {
+                                    "fill": {
+                                      "color": "#E78AC3",
+                                      "opacity": 0.4
+                                    },
+                                    "stroke": {
+                                      "color": "#E78AC3",
+                                      "dashArray": 0,
+                                      "opacity": 0.4,
+                                      "width": 1
+                                    }
+                                  },
+                                  "normal": {
+                                    "fill": {
+                                      "color": "#E78AC3",
+                                      "opacity": 0.8
+                                    },
+                                    "stroke": {
+                                      "color": "#63BEA2",
+                                      "dashArray": 0,
+                                      "opacity": 0.8,
+                                      "width": 1
+                                    }
+                                  },
+                                  "selected": {
+                                    "fill": {
+                                      "color": "#E78AC3",
+                                      "opacity": 1
+                                    },
+                                    "stroke": {
+                                      "color": "#E78AC3",
+                                      "dashArray": 0,
+                                      "opacity": 1,
+                                      "width": 1
+                                    }
+                                  }
+                                },
+                                "type": "line"
+                              },
+                              "enabled": true,
+                              "name": "compressor/energy_kwh",
+                              "plot": 0,
+                              "selectable": true,
+                              "visible": true
+                            },
+                            {
+                              "axis": "",
+                              "data": {
+                                "aggregateMode": "default",
+                                "source": "histprov:INCHMYMESDEV:/drv:ignition-inchn-cg43874sl:default:/tag:varun_beverages_energy_monitoring/utilities/refrigeration/energy_kwh"
+                              },
+                              "display": {
+                                "breakLine": true,
+                                "interpolation": "curveLinear",
+                                "radius": 3,
+                                "styles": {
+                                  "highlighted": {
+                                    "fill": {
+                                      "color": "#A6D854",
+                                      "opacity": 1
+                                    },
+                                    "stroke": {
+                                      "color": "#A6D854",
+                                      "dashArray": 0,
+                                      "opacity": 1,
+                                      "width": 1
+                                    }
+                                  },
+                                  "muted": {
+                                    "fill": {
+                                      "color": "#A6D854",
+                                      "opacity": 0.4
+                                    },
+                                    "stroke": {
+                                      "color": "#A6D854",
+                                      "dashArray": 0,
+                                      "opacity": 0.4,
+                                      "width": 1
+                                    }
+                                  },
+                                  "normal": {
+                                    "fill": {
+                                      "color": "#A6D854",
+                                      "opacity": 0.8
+                                    },
+                                    "stroke": {
+                                      "color": "#A6D854",
+                                      "dashArray": 0,
+                                      "opacity": 0.8,
+                                      "width": 1
+                                    }
+                                  },
+                                  "selected": {
+                                    "fill": {
+                                      "color": "#A6D854",
+                                      "opacity": 1
+                                    },
+                                    "stroke": {
+                                      "color": "#A6D854",
+                                      "dashArray": 0,
+                                      "opacity": 1,
+                                      "width": 1
+                                    }
+                                  }
+                                },
+                                "type": "line"
+                              },
+                              "enabled": true,
+                              "name": "refrigeration/energy_kwh",
+                              "plot": 0,
+                              "selectable": true,
+                              "visible": true
+                            }
+                          ],
+                          "timeAxis": {
+                            "color": "#808080"
+                          }
+                        },
+                        "type": "ia.chart.powerchart"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "1596px"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "overflow": "hidden"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_2"
+                },
+                "position": {
+                  "basis": "791px"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_2"
+            },
+            "position": {
+              "basis": "318px"
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#D5D5D526",
+                "borderColor": "#D5D5D5",
+                "borderStyle": "solid",
+                "borderWidth": 1
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Label"
+                        },
+                        "position": {
+                          "basis": "20px"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#0000AC",
+                            "fontFamily": "inherit",
+                            "fontSize": 20,
+                            "fontWeight": "normal",
+                            "margin": 10
+                          }
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "Label_0"
+                        },
+                        "position": {
+                          "basis": "188px"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#0000AC",
+                            "fontFamily": "inherit",
+                            "fontSize": 20,
+                            "fontWeight": "normal",
+                            "margin": 10
+                          },
+                          "text": "Live Metrics"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "53px"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "151px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#555555",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 20,
+                                    "margin": 10
+                                  },
+                                  "text": "Current Load"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "34px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "142px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "expression": "{[default]Varun_Beverages_Energy_Monitoring/Energy_Sources/DG_Set/Power_kW} +\r\n{[default]Varun_Beverages_Energy_Monitoring/Energy_Sources/Main_Line/Power_kW} +\r\n{[default]Varun_Beverages_Energy_Monitoring/Energy_Sources/Solar_Panel/Power_kW}\r\n"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "round({value},2) + \" \" + \"kWh\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "expr"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#00AC00",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 20,
+                                    "fontWeight": "600",
+                                    "margin": 10
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "38px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_0"
+                        },
+                        "position": {
+                          "basis": "854px"
+                        },
+                        "props": {
+                          "direction": "column"
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "210px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#555555",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 20,
+                                    "margin": 10
+                                  },
+                                  "text": "System Efficiency"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "34px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "117px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Calculated_Metrics/Overall_Plant_Efficiency_Percent"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value} + \" \" + \"%\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#FF8C00",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 20,
+                                    "fontWeight": "600",
+                                    "margin": 10
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "38px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_1"
+                        },
+                        "position": {
+                          "basis": "345.7px"
+                        },
+                        "props": {
+                          "direction": "column"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_0"
+                    },
+                    "position": {
+                      "basis": "91px"
+                    },
+                    "props": {
+                      "style": {
+                        "borderBottomLeftRadius": 20,
+                        "borderBottomRightRadius": 20,
+                        "borderColor": "#D5D5D5",
+                        "borderStyle": "solid",
+                        "borderTopLeftRadius": 20,
+                        "borderTopRightRadius": 20,
+                        "borderWidth": 1,
+                        "margin": 5
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "151px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#555555",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 20,
+                                    "margin": 10
+                                  },
+                                  "text": "Peak Today"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "34px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "156px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Energy_Sources/Total_Power_kW"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "round({value},2) + \" \" + \"kWh\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 20,
+                                    "fontWeight": "600",
+                                    "margin": 10
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "38px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_2"
+                        },
+                        "position": {
+                          "basis": "855px"
+                        },
+                        "props": {
+                          "direction": "column"
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "151px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#555555",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 20,
+                                    "margin": 10
+                                  },
+                                  "text": "Avg Efficiency"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "34px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "122px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "expression": "(\r\n  {[default]Varun_Beverages_Energy_Monitoring/Krones_Ergobloc_L/Efficiency_Percent} +\r\n  {[default]Varun_Beverages_Energy_Monitoring/Packaging_Line/Efficiency_Percent} +\r\n  {[default]Varun_Beverages_Energy_Monitoring/Utilities/Air_Conditioning/Efficiency_Percent} +\r\n  {[default]Varun_Beverages_Energy_Monitoring/Utilities/Compressor/Efficiency_Percent} +\r\n  {[default]Varun_Beverages_Energy_Monitoring/Utilities/Refrigeration/Efficiency_Percent}\r\n) / 5\r\n"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "round({value},2) + \" \" + \"%\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "expr"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 20,
+                                    "fontWeight": "600",
+                                    "margin": 10
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "38px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_3"
+                        },
+                        "position": {
+                          "basis": "353px"
+                        },
+                        "props": {
+                          "direction": "column"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_1"
+                    },
+                    "position": {
+                      "basis": "99px"
+                    },
+                    "props": {
+                      "style": {
+                        "borderBottomLeftRadius": 20,
+                        "borderBottomRightRadius": 20,
+                        "borderColor": "#D5D5D5",
+                        "borderStyle": "solid",
+                        "borderTopLeftRadius": 20,
+                        "borderTopRightRadius": 20,
+                        "borderWidth": 1,
+                        "margin": 5
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "1660px"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "borderColor": "#D5D5D5",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                    "margin": 0
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_4"
+            },
+            "position": {
+              "basis": "268px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "37px"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Label"
+                        },
+                        "position": {
+                          "basis": "188px"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#0000AC",
+                            "fontFamily": "inherit",
+                            "fontSize": 20,
+                            "fontWeight": "normal",
+                            "margin": 20
+                          },
+                          "text": "KPI Dashboard"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Icon"
+                                },
+                                "position": {
+                                  "basis": "30px"
+                                },
+                                "props": {
+                                  "color": "#00D900",
+                                  "path": "material/trending_up"
+                                },
+                                "type": "ia.display.icon"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label"
+                                    },
+                                    "position": {
+                                      "basis": "636px"
+                                    },
+                                    "props": {
+                                      "text": "Energy Efficiency",
+                                      "textStyle": {
+                                        "color": "#000000",
+                                        "fontFamily": "inherit",
+                                        "fontSize": 15,
+                                        "fontWeight": "500"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  },
+                                  {
+                                    "meta": {
+                                      "name": "Label_0"
+                                    },
+                                    "position": {
+                                      "basis": "86px"
+                                    },
+                                    "props": {
+                                      "style": {
+                                        "backgroundColor": "#D5D5D5",
+                                        "margin": 5
+                                      },
+                                      "text": "Live Data",
+                                      "textStyle": {
+                                        "fontFamily": "inherit",
+                                        "fontSize": 15
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "FlexContainer_0"
+                                },
+                                "position": {
+                                  "basis": "741px"
+                                },
+                                "type": "ia.container.flex"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "32px"
+                            },
+                            "props": {
+                              "style": {
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "622px"
+                                },
+                                "props": {
+                                  "text": "Energy intensity",
+                                  "textStyle": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "86px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontWeight": "600"
+                                  },
+                                  "text": "2.5kWh/Unit",
+                                  "textStyle": {
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "32px"
+                            },
+                            "props": {
+                              "style": {
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Icon"
+                                },
+                                "position": {
+                                  "basis": "30px"
+                                },
+                                "props": {
+                                  "color": "#808080",
+                                  "path": "material/access_time"
+                                },
+                                "type": "ia.display.icon"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "188px"
+                                },
+                                "props": {
+                                  "text": "Peak Usage Time"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_1"
+                            },
+                            "position": {
+                              "basis": "32px"
+                            },
+                            "props": {
+                              "style": {
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "86px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontWeight": "600",
+                                    "margin": 5
+                                  },
+                                  "text": "10:00-12:00",
+                                  "textStyle": {
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_2"
+                            },
+                            "position": {
+                              "basis": "32px"
+                            },
+                            "props": {
+                              "style": {
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label"
+                                    },
+                                    "position": {
+                                      "basis": "262px"
+                                    },
+                                    "props": {
+                                      "text": "Usage Distribution"
+                                    },
+                                    "type": "ia.display.label"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "33px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label"
+                                    },
+                                    "position": {
+                                      "basis": "50px"
+                                    },
+                                    "props": {
+                                      "text": "Main"
+                                    },
+                                    "type": "ia.display.label"
+                                  },
+                                  {
+                                    "meta": {
+                                      "name": "Progress"
+                                    },
+                                    "position": {
+                                      "basis": "717px"
+                                    },
+                                    "propConfig": {
+                                      "props.value": {
+                                        "binding": {
+                                          "config": {
+                                            "fallbackDelay": 2.5,
+                                            "mode": "direct",
+                                            "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Energy_Sources/Main_Line/Energy_kWh"
+                                          },
+                                          "transforms": [
+                                            {
+                                              "expression": "round({value},2)",
+                                              "type": "expression"
+                                            }
+                                          ],
+                                          "type": "tag"
+                                        }
+                                      }
+                                    },
+                                    "props": {
+                                      "bar": {
+                                        "color": "#FF0000"
+                                      },
+                                      "max": 1000000,
+                                      "style": {
+                                        "margin": 10
+                                      }
+                                    },
+                                    "type": "ia.display.progress"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "FlexContainer_0"
+                                },
+                                "position": {
+                                  "basis": "65px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label"
+                                    },
+                                    "position": {
+                                      "basis": "50px"
+                                    },
+                                    "props": {
+                                      "text": "Solar"
+                                    },
+                                    "type": "ia.display.label"
+                                  },
+                                  {
+                                    "meta": {
+                                      "name": "Progress"
+                                    },
+                                    "position": {
+                                      "basis": "710px"
+                                    },
+                                    "propConfig": {
+                                      "props.value": {
+                                        "binding": {
+                                          "config": {
+                                            "fallbackDelay": 2.5,
+                                            "mode": "direct",
+                                            "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Energy_Sources/Main_Line/Energy_kWh"
+                                          },
+                                          "transforms": [
+                                            {
+                                              "expression": "round({value},2)",
+                                              "type": "expression"
+                                            }
+                                          ],
+                                          "type": "tag"
+                                        }
+                                      }
+                                    },
+                                    "props": {
+                                      "bar": {
+                                        "color": "#D5D5D5"
+                                      },
+                                      "max": 1000000,
+                                      "style": {
+                                        "margin": 10
+                                      }
+                                    },
+                                    "type": "ia.display.progress"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "FlexContainer_1"
+                                },
+                                "position": {
+                                  "basis": "65px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label"
+                                    },
+                                    "position": {
+                                      "basis": "50px"
+                                    },
+                                    "props": {
+                                      "text": "Water"
+                                    },
+                                    "type": "ia.display.label"
+                                  },
+                                  {
+                                    "meta": {
+                                      "name": "Progress"
+                                    },
+                                    "position": {
+                                      "basis": "710px"
+                                    },
+                                    "propConfig": {
+                                      "props.value": {
+                                        "binding": {
+                                          "config": {
+                                            "fallbackDelay": 2.5,
+                                            "mode": "direct",
+                                            "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Energy_Sources/DG_Set/Energy_kWh"
+                                          },
+                                          "type": "tag"
+                                        }
+                                      }
+                                    },
+                                    "props": {
+                                      "bar": {
+                                        "color": "#00FF00"
+                                      },
+                                      "max": 100000,
+                                      "style": {
+                                        "margin": 10
+                                      }
+                                    },
+                                    "type": "ia.display.progress"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "FlexContainer_2"
+                                },
+                                "position": {
+                                  "basis": "65px"
+                                },
+                                "type": "ia.container.flex"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_3"
+                            },
+                            "position": {
+                              "basis": "200px"
+                            },
+                            "props": {
+                              "direction": "column"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer"
+                        },
+                        "position": {
+                          "basis": "784px"
+                        },
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "borderColor": "#555555",
+                            "borderStyle": "solid",
+                            "borderWidth": 1,
+                            "margin": 10
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Icon"
+                                },
+                                "position": {
+                                  "basis": "30px"
+                                },
+                                "props": {
+                                  "color": "#00D900",
+                                  "path": "material/invert_colors"
+                                },
+                                "type": "ia.display.icon"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label"
+                                    },
+                                    "position": {
+                                      "basis": "636px"
+                                    },
+                                    "props": {
+                                      "text": "Environmental \u0026 Compilance",
+                                      "textStyle": {
+                                        "color": "#000000",
+                                        "fontFamily": "inherit",
+                                        "fontSize": 15,
+                                        "fontWeight": "500"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  },
+                                  {
+                                    "meta": {
+                                      "name": "Label_0"
+                                    },
+                                    "position": {
+                                      "basis": "86px"
+                                    },
+                                    "props": {
+                                      "style": {
+                                        "backgroundColor": "#D5D5D5",
+                                        "margin": 5
+                                      },
+                                      "text": "Live Data",
+                                      "textStyle": {
+                                        "fontFamily": "inherit",
+                                        "fontSize": 15
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "FlexContainer_0"
+                                },
+                                "position": {
+                                  "basis": "741px"
+                                },
+                                "type": "ia.container.flex"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer"
+                            },
+                            "position": {
+                              "basis": "32px"
+                            },
+                            "props": {
+                              "style": {
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "664px"
+                                },
+                                "props": {
+                                  "text": "CO2 Emissions",
+                                  "textStyle": {
+                                    "color": "#000000",
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "86px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontWeight": "600"
+                                  },
+                                  "text": "1872.9 kg",
+                                  "textStyle": {
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "32px"
+                            },
+                            "props": {
+                              "style": {
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Icon"
+                                },
+                                "position": {
+                                  "basis": "30px"
+                                },
+                                "props": {
+                                  "color": "#808080",
+                                  "path": "material/local_police"
+                                },
+                                "type": "ia.display.icon"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "188px"
+                                },
+                                "props": {
+                                  "text": "Compilance Status"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_1"
+                            },
+                            "position": {
+                              "basis": "32px"
+                            },
+                            "props": {
+                              "style": {
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "337px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#000000",
+                                    "fontWeight": "600",
+                                    "margin": 5
+                                  },
+                                  "text": "All Environmental Regulation Meet",
+                                  "textStyle": {
+                                    "fontFamily": "inherit",
+                                    "fontSize": 15
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_2"
+                            },
+                            "position": {
+                              "basis": "32px"
+                            },
+                            "props": {
+                              "style": {
+                                "margin": 5
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label"
+                                    },
+                                    "position": {
+                                      "basis": "129px"
+                                    },
+                                    "props": {
+                                      "text": "Last Audit"
+                                    },
+                                    "type": "ia.display.label"
+                                  },
+                                  {
+                                    "meta": {
+                                      "name": "Label_0"
+                                    },
+                                    "position": {
+                                      "basis": "270px"
+                                    },
+                                    "propConfig": {
+                                      "props.text": {
+                                        "binding": {
+                                          "config": {
+                                            "expression": "dateFormat(dateArithmetic(now(), -90, \"days\"), \"dd/MM/yyyy\")\r\n\r\n"
+                                          },
+                                          "type": "expr"
+                                        }
+                                      }
+                                    },
+                                    "props": {
+                                      "style": {
+                                        "color": "#000000",
+                                        "fontFamily": "inherit",
+                                        "fontSize": 20,
+                                        "fontWeight": "500"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "FlexContainer_0"
+                                },
+                                "position": {
+                                  "basis": "65px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label"
+                                    },
+                                    "position": {
+                                      "basis": "129px"
+                                    },
+                                    "props": {
+                                      "text": "Next Review"
+                                    },
+                                    "type": "ia.display.label"
+                                  },
+                                  {
+                                    "meta": {
+                                      "name": "Label_0"
+                                    },
+                                    "position": {
+                                      "basis": "156px"
+                                    },
+                                    "props": {
+                                      "style": {
+                                        "color": "#000000",
+                                        "fontFamily": "inherit",
+                                        "fontSize": 20,
+                                        "fontWeight": "500"
+                                      },
+                                      "text": "Mar 15, 2025"
+                                    },
+                                    "type": "ia.display.label"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "FlexContainer_1"
+                                },
+                                "position": {
+                                  "basis": "65px"
+                                },
+                                "type": "ia.container.flex"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_3"
+                            },
+                            "position": {
+                              "basis": "200px"
+                            },
+                            "props": {
+                              "direction": "column",
+                              "style": {
+                                "borderColor": "#D5D5D5",
+                                "borderStyle": "solid",
+                                "borderWidth": 1
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "FlexContainer_0"
+                        },
+                        "position": {
+                          "basis": "784px"
+                        },
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "borderColor": "#555555",
+                            "borderStyle": "solid",
+                            "borderWidth": 1,
+                            "margin": 10
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_0"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_0"
+                },
+                "position": {
+                  "basis": "1532px"
+                },
+                "props": {
+                  "direction": "column"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_5"
+            },
+            "props": {
+              "style": {
+                "borderColor": "#D5D5D5",
+                "borderStyle": "solid",
+                "borderWidth": 1
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "height": 1200,
+          "width": "99%"
+        },
+        "props": {
+          "direction": "column"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

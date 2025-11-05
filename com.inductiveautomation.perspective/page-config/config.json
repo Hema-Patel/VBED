@@ -1,0 +1,55 @@
+{
+  "pages": {
+    "/": {
+      "docks": {
+        "top": [
+          {
+            "anchor": "fixed",
+            "autoBreakpoint": 480,
+            "content": "auto",
+            "handle": "hide",
+            "iconUrl": "",
+            "id": "",
+            "modal": false,
+            "resizable": false,
+            "show": "visible",
+            "size": 125,
+            "viewParams": {},
+            "viewPath": "Topbar_menu"
+          }
+        ]
+      },
+      "title": "",
+      "viewPath": "Energy_Monitor"
+    },
+    "/equipment_analysis": {
+      "docks": {
+        "top": [
+          {
+            "anchor": "fixed",
+            "autoBreakpoint": 200,
+            "content": "auto",
+            "handle": "hide",
+            "iconUrl": "",
+            "id": "",
+            "modal": false,
+            "resizable": false,
+            "show": "visible",
+            "size": 125,
+            "viewParams": {},
+            "viewPath": "Topbar_menu"
+          }
+        ]
+      },
+      "title": "",
+      "viewPath": "Equipment_Analysis"
+    },
+    "/periodic": {
+      "title": "",
+      "viewPath": "Periodic_Comparison"
+    }
+  },
+  "sharedDocks": {
+    "cornerPriority": "top-bottom"
+  }
+}

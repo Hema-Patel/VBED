@@ -1,0 +1,253 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "width": 1225
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Image"
+            },
+            "position": {
+              "basis": "162px"
+            },
+            "props": {
+              "source": "\n"
+            },
+            "type": "ia.display.image"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "613px"
+                },
+                "props": {
+                  "style": {
+                    "color": "#FFFFFF",
+                    "fontFamily": "inherit",
+                    "fontSize": 35,
+                    "fontWeight": "900"
+                  },
+                  "text": "Energy Monitoring"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "basis": "663px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "158px"
+                    },
+                    "propConfig": {
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "expression": "dateFormat(now(), \"hh:mm a\")\r\n"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#FFFFFF",
+                        "fontFamily": "inherit",
+                        "fontSize": 20
+                      }
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_0"
+                },
+                "position": {
+                  "basis": "613px"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "399px"
+                    },
+                    "propConfig": {
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "expression": "dateFormat(now(), \"EEEE, MMMM dd, yyyy\")\r\n"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#FFFFFF",
+                        "fontFamily": "inherit",
+                        "fontSize": 18
+                      }
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_1"
+                },
+                "position": {
+                  "basis": "613px"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_0"
+            },
+            "position": {
+              "basis": "399px"
+            },
+            "props": {
+              "direction": "column"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "height": 66,
+          "width": "99%"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#1C446F",
+            "margin": 0
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "HorizontalMenu"
+            },
+            "position": {
+              "basis": "1212.8px"
+            },
+            "props": {
+              "items": [
+                {
+                  "enabled": true,
+                  "icon": {
+                    "path": ""
+                  },
+                  "items": [
+                    {
+                      "enabled": true,
+                      "icon": {
+                        "color": "",
+                        "path": "material/link"
+                      },
+                      "items": [],
+                      "label": "",
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "/"
+                    }
+                  ],
+                  "label": "Overview",
+                  "style": {
+                    "classes": "",
+                    "color": "#000000",
+                    "fontFamily": "inherit",
+                    "fontSize": 15
+                  },
+                  "target": ""
+                },
+                {
+                  "enabled": false,
+                  "icon": {
+                    "color": "",
+                    "path": ""
+                  },
+                  "items": [],
+                  "label": "Period Comparison",
+                  "style": {
+                    "classes": "",
+                    "color": "#000000",
+                    "fontFamily": "inherit",
+                    "fontSize": 15
+                  },
+                  "target": "/periodic"
+                },
+                {
+                  "enabled": false,
+                  "icon": {
+                    "path": ""
+                  },
+                  "items": [],
+                  "label": "Equipment_Analysis",
+                  "style": {
+                    "classes": "",
+                    "color": "#000000",
+                    "fontFamily": "inherit",
+                    "fontSize": 15
+                  },
+                  "target": "/equipment_analysis"
+                }
+              ]
+            },
+            "type": "ia.navigation.horizontalmenu"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_1"
+        },
+        "position": {
+          "height": 35,
+          "rotate": {
+            "anchor": "47% 39%"
+          },
+          "width": "101%",
+          "y": 66
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}
