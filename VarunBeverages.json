@@ -1,0 +1,1210 @@
+{
+  "name": "Varun_Beverages_Energy_Monitoring",
+  "tagType": "Folder",
+  "tags": [
+    {
+      "name": "Krones_Ergobloc_L",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Energy consumption per bottle in Wh",
+          "name": "Energy_Per_Bottle_Wh",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 11.31962,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Machine running status",
+          "name": "Running_Status",
+          "historyEnabled": true,
+          "defaultValue": false,
+          "value": true,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Int4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Production speed in bottles per minute",
+          "name": "Production_Speed_BPM",
+          "historyEnabled": true,
+          "defaultValue": 0,
+          "value": 537,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Int4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Total bottles produced",
+          "name": "Bottles_Produced",
+          "historyEnabled": true,
+          "defaultValue": 0,
+          "value": 338952,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Cumulative energy consumption in kWh",
+          "name": "Energy_kWh",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 3836.8079,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Capper",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Capper section power consumption",
+              "name": "Power_kW",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 97.45,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historicalDeadband": 0.5,
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Krones Ergobloc L power consumption in kW",
+          "name": "Power_kW",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 388.99,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Machine efficiency based on rated speed of 600 BPM",
+          "name": "Efficiency_Percent",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 89.5,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Filler",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Filler temperature in Celsius",
+              "name": "Temperature_C",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 15.91,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Filler section power consumption",
+              "name": "Power_kW",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 114.92,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "Labeler",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Labeler section power consumption",
+              "name": "Power_kW",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 87.44,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Machine alarm status",
+          "name": "Alarm_Status",
+          "historyEnabled": true,
+          "defaultValue": false,
+          "value": false,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "name": "Alarms",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "documentation": "Alarm when total power exceeds 3000 kW",
+          "name": "High_Power_Consumption",
+          "defaultValue": false,
+          "alarmConfig": {
+            "enabled": true,
+            "priority": "High",
+            "displayPath": "Energy/High Consumption",
+            "notes": "Total power exceeds threshold of 3000 kW"
+          },
+          "value": false,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "documentation": "Notification when DG is running",
+          "name": "DG_Running",
+          "defaultValue": false,
+          "alarmConfig": {
+            "enabled": true,
+            "priority": "Medium",
+            "displayPath": "Energy/DG Running",
+            "notes": "Diesel generator is running"
+          },
+          "value": true,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "documentation": "Alarm for low solar generation during peak hours",
+          "name": "Low_Solar_Generation",
+          "defaultValue": false,
+          "alarmConfig": {
+            "enabled": true,
+            "priority": "Medium",
+            "displayPath": "Energy/Low Solar Generation",
+            "notes": "Solar generation below 200 kW during daylight hours"
+          },
+          "value": false,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "documentation": "Alarm when shift energy exceeds target",
+          "name": "Shift_Target_Exceeded",
+          "defaultValue": false,
+          "alarmConfig": {
+            "enabled": true,
+            "priority": "Medium",
+            "displayPath": "Shift/Target Exceeded",
+            "notes": "Shift energy consumption exceeded target"
+          },
+          "value": true,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "documentation": "Alarm when overall efficiency drops below 80%",
+          "name": "Low_Equipment_Efficiency",
+          "defaultValue": false,
+          "alarmConfig": {
+            "enabled": true,
+            "priority": "High",
+            "displayPath": "Equipment/Low Efficiency",
+            "notes": "Overall plant efficiency below 80%"
+          },
+          "value": false,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "name": "Energy_Sources",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historicalDeadband": 1.0,
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Total power consumption from all sources",
+          "name": "Total_Power_kW",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 2122.61,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "DG_Set",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "DG voltage in Volts",
+              "name": "Voltage_V",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 409.51,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "DG engine RPM",
+              "name": "RPM",
+              "historyEnabled": true,
+              "defaultValue": 0,
+              "value": 1212,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historicalDeadband": 0.5,
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "DG set power generation in kW",
+              "name": "Power_kW",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 395.77,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "DG current in Amperes",
+              "name": "Current_A",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 966.45,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "DG engine temperature in Celsius",
+              "name": "EngineTemp_C",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 69.25,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historicalDeadband": 1.0,
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Cumulative DG energy generated in kWh",
+              "name": "Energy_kWh",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 1276.5437,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "DG cumulative running hours",
+              "name": "RunHours",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 2.848568,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Boolean",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "DG running status (True\u003dRunning, False\u003dStopped)",
+              "name": "Running_Status",
+              "historyEnabled": true,
+              "defaultValue": false,
+              "value": true,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "DG fuel level percentage",
+              "name": "FuelLevel_Percent",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 64.96,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "Main_Line",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historicalDeadband": 1.0,
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Main line voltage in Volts",
+              "name": "Voltage_V",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 420.95,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Power factor of main line",
+              "name": "PowerFactor",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 0.95,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historicalDeadband": 1.0,
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Cumulative energy consumption in kWh",
+              "name": "Energy_kWh",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 20770.031,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Frequency in Hz",
+              "name": "Frequency_Hz",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 50.04,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "historicalDeadband": 0.5,
+              "documentation": "Main power line consumption in kW",
+              "defaultValue": 0.0,
+              "enabled": true,
+              "tagType": "AtomicTag",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "name": "Power_kW",
+              "historyEnabled": true,
+              "value": 1475.89,
+              "sampleMode": "OnChange"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historicalDeadband": 0.5,
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Main line current in Amperes",
+              "name": "Current_A",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 3506.09,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "Solar_Panel",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historicalDeadband": 1.0,
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Cumulative solar energy generated in kWh",
+              "name": "Energy_kWh",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 2253.3423,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Solar panel voltage in Volts",
+              "name": "Voltage_V",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 401.57,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Solar panel current in Amperes",
+              "name": "Current_A",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 624.92,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historicalDeadband": 0.5,
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Solar panel power generation in kW",
+              "name": "Power_kW",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 250.95,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Solar irradiance in W/m²",
+              "name": "Irradiance_Wm2",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 744.8,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Solar panel temperature in Celsius",
+              "name": "PanelTemp_C",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 49.65,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Solar panel efficiency percentage",
+              "name": "Efficiency_Percent",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 88.25,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Combined main line and solar power",
+          "name": "Grid_Plus_Solar_kW",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 1726.84,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "name": "Calculated_Metrics",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Average efficiency of all equipment",
+          "name": "Overall_Plant_Efficiency_Percent",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 83.68933,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Energy savings compared to previous week",
+          "name": "Weekly_Energy_Savings_kWh",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 648.01,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Energy savings compared to previous month",
+          "name": "Monthly_Energy_Savings_kWh",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 3188.26,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Solar energy percentage of total consumption",
+          "name": "Solar_Contribution_Percent",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 11.822709,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Grid energy percentage of total consumption",
+          "name": "Grid_Contribution_Percent",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 69.53185,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "DG energy percentage of total consumption",
+          "name": "DG_Contribution_Percent",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 18.645441,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Total power consumption of all equipment",
+          "name": "Total_Equipment_Power_kW",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 759.43,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Energy savings compared to previous year",
+          "name": "Yearly_Energy_Savings_kWh",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 32530.59,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Estimated cost per hour in INR (Grid: 8.5, Solar: 0, DG: 18.5)",
+          "name": "Cost_Per_Hour_INR",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 19866.81,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Energy savings compared to previous day",
+          "name": "Daily_Energy_Savings_kWh",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 1.33,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "name": "Shift_Data",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Total energy consumed in current shift",
+          "name": "Shift_Total_Energy_kWh",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 21308.684,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "DateTime",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Shift start timestamp",
+          "name": "Shift_Start_Time",
+          "historyEnabled": true,
+          "value": 1761618375091,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Int4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Current shift number (1, 2, or 3)",
+          "name": "Current_Shift",
+          "historyEnabled": true,
+          "defaultValue": 0,
+          "value": 1,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Target energy consumption per shift",
+          "name": "Shift_Target_Energy_kWh",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 2000.0,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Previous shift energy consumption",
+          "name": "Previous_Shift_Energy_kWh",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 2991.1968,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "name": "Packaging_Line",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Conveyor",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Conveyor power consumption",
+              "name": "Power_kW",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 71.98,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "Palletizer",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Palletizer power consumption",
+              "name": "Power_kW",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 27.32,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Int4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Packaging speed in cases per minute",
+          "name": "Speed_CPM",
+          "historyEnabled": true,
+          "defaultValue": 0,
+          "value": 23,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historicalDeadband": 0.5,
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Packaging line power consumption in kW",
+          "name": "Power_kW",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 241.57,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Cumulative energy consumption in kWh",
+          "name": "Energy_kWh",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 2193.9348,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Float4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Packaging line efficiency based on rated speed of 30 CPM",
+          "name": "Efficiency_Percent",
+          "historyEnabled": true,
+          "defaultValue": 0.0,
+          "value": 76.666664,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Packaging line running status",
+          "name": "Running_Status",
+          "historyEnabled": true,
+          "defaultValue": false,
+          "value": true,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Shrink_Wrapper",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Shrink wrapper power consumption",
+              "name": "Power_kW",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 93.42,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Shrink wrapper heater temperature",
+              "name": "Heater_Temperature_C",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 154.1,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Int4",
+          "historyProvider": "INCHMYMESDEV",
+          "documentation": "Total cases packed",
+          "name": "Cases_Packed",
+          "historyEnabled": true,
+          "defaultValue": 0,
+          "value": 12566,
+          "enabled": true,
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "name": "Utilities",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Compressor",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Cumulative energy consumption in kWh",
+              "name": "Energy_kWh",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 483.85416,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Compressor efficiency calculation",
+              "name": "Efficiency_Percent",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 86.96,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Air pressure in Bar",
+              "name": "Pressure_Bar",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 6.19,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Motor temperature in Celsius",
+              "name": "Motor_Temperature_C",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 70.38,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Compressor load percentage",
+              "name": "Load_Percent",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 82.55,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Boolean",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Compressor running status",
+              "name": "Running_Status",
+              "historyEnabled": true,
+              "defaultValue": false,
+              "value": true,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historicalDeadband": 0.5,
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Compressor power consumption in kW",
+              "name": "Power_kW",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 54.94,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "Air_Conditioning",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "AC compressor cumulative runtime",
+              "name": "Compressor_Runtime_Hours",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 11.463591,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "AC efficiency based on temperature control",
+              "name": "Efficiency_Percent",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 95.32,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historicalDeadband": 0.5,
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "AC power consumption in kW",
+              "name": "Power_kW",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 30.46,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Room temperature in Celsius",
+              "name": "Room_Temperature_C",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 22.44,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Boolean",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "AC running status",
+              "name": "Running_Status",
+              "historyEnabled": true,
+              "defaultValue": false,
+              "value": true,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Temperature setpoint in Celsius",
+              "name": "SetPoint_C",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 24.0,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Cumulative energy consumption in kWh",
+              "name": "Energy_kWh",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 479.7059,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "Refrigeration",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Temperature setpoint in Celsius",
+              "name": "SetPoint_C",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 5.0,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Cumulative energy consumption in kWh",
+              "name": "Energy_kWh",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 2619.8972,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Boolean",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Refrigeration running status",
+              "name": "Running_Status",
+              "historyEnabled": true,
+              "defaultValue": false,
+              "value": false,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Refrigeration efficiency",
+              "name": "Efficiency_Percent",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 70.0,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historicalDeadband": 0.5,
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Refrigeration power consumption in kW",
+              "name": "Power_kW",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 43.47,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Cold room temperature in Celsius",
+              "name": "Cold_Room_Temperature_C",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 13.97,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float4",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Refrigeration compressor pressure",
+              "name": "Compressor_Pressure_Bar",
+              "historyEnabled": true,
+              "defaultValue": 0.0,
+              "value": 8.18,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Boolean",
+              "historyProvider": "INCHMYMESDEV",
+              "documentation": "Defrost cycle status",
+              "name": "Defrost_Cycle_Active",
+              "historyEnabled": true,
+              "defaultValue": false,
+              "value": false,
+              "enabled": true,
+              "tagType": "AtomicTag"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
