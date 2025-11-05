@@ -725,7 +725,7 @@
                               "name": "FlexContainer"
                             },
                             "position": {
-                              "basis": "73px"
+                              "basis": "53px"
                             },
                             "type": "ia.container.flex"
                           },
@@ -771,7 +771,7 @@
                               "name": "FlexContainer_0"
                             },
                             "position": {
-                              "basis": "156px"
+                              "basis": "198px"
                             },
                             "props": {
                               "direction": "column"
@@ -913,7 +913,7 @@
                               "name": "FlexContainer"
                             },
                             "position": {
-                              "basis": "71px"
+                              "basis": "47px"
                             },
                             "type": "ia.container.flex"
                           },
@@ -936,7 +936,7 @@
                                       },
                                       "transforms": [
                                         {
-                                          "expression": "{value} + \"%\"",
+                                          "expression": "round({value},2)+ \"%\"",
                                           "type": "expression"
                                         }
                                       ],
@@ -959,7 +959,7 @@
                               "name": "FlexContainer_0"
                             },
                             "position": {
-                              "basis": "156px"
+                              "basis": "185px"
                             },
                             "props": {
                               "direction": "column"
@@ -1245,17 +1245,17 @@
                               "$": [
                                 "ts",
                                 0,
-                                1762343832853
+                                1762366301224
                               ],
-                              "$ts": 1762343830965
+                              "$ts": 1762366295056
                             },
                             "rangeStartDate": {
                               "$": [
                                 "ts",
                                 0,
-                                1762343832853
+                                1762366301224
                               ],
-                              "$ts": 1762343352565
+                              "$ts": 1762365816656
                             },
                             "visibility": {
                               "buttons": {
@@ -1653,7 +1653,7 @@
               "name": "FlexContainer_2"
             },
             "position": {
-              "basis": "318px"
+              "basis": "351px"
             },
             "props": {
               "style": {
@@ -1757,7 +1757,7 @@
                                   "name": "Label"
                                 },
                                 "position": {
-                                  "basis": "142px"
+                                  "basis": "449px"
                                 },
                                 "propConfig": {
                                   "props.text": {
@@ -1845,7 +1845,7 @@
                                   "name": "Label"
                                 },
                                 "position": {
-                                  "basis": "117px"
+                                  "basis": "345.7px"
                                 },
                                 "propConfig": {
                                   "props.text": {
@@ -1857,7 +1857,7 @@
                                       },
                                       "transforms": [
                                         {
-                                          "expression": "{value} + \" \" + \"%\"",
+                                          "expression": "round({value},2) + \"%\"",
                                           "type": "expression"
                                         }
                                       ],
@@ -2467,7 +2467,7 @@
                                       "bar": {
                                         "color": "#FF0000"
                                       },
-                                      "max": 1000000,
+                                      "max": 250000,
                                       "style": {
                                         "margin": 10
                                       }
@@ -2510,7 +2510,7 @@
                                           "config": {
                                             "fallbackDelay": 2.5,
                                             "mode": "direct",
-                                            "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Energy_Sources/Main_Line/Energy_kWh"
+                                            "tagPath": "[default]Varun_Beverages_Energy_Monitoring/Energy_Sources/Solar_Panel/Energy_kWh"
                                           },
                                           "transforms": [
                                             {
@@ -2526,7 +2526,7 @@
                                       "bar": {
                                         "color": "#D5D5D5"
                                       },
-                                      "max": 1000000,
+                                      "max": 30000,
                                       "style": {
                                         "margin": 10
                                       }
@@ -2552,7 +2552,7 @@
                                       "basis": "50px"
                                     },
                                     "props": {
-                                      "text": "Water"
+                                      "text": "DG"
                                     },
                                     "type": "ia.display.label"
                                   },
@@ -2579,7 +2579,7 @@
                                       "bar": {
                                         "color": "#00FF00"
                                       },
-                                      "max": 100000,
+                                      "max": 15000,
                                       "style": {
                                         "margin": 10
                                       }
@@ -2603,7 +2603,10 @@
                               "basis": "200px"
                             },
                             "props": {
-                              "direction": "column"
+                              "direction": "column",
+                              "style": {
+                                "margin": 5
+                              }
                             },
                             "type": "ia.container.flex"
                           }
@@ -2941,7 +2944,8 @@
                               "style": {
                                 "borderColor": "#D5D5D5",
                                 "borderStyle": "solid",
-                                "borderWidth": 1
+                                "borderWidth": 1,
+                                "margin": 5
                               }
                             },
                             "type": "ia.container.flex"
@@ -3000,7 +3004,7 @@
           "name": "FlexContainer"
         },
         "position": {
-          "height": 1200,
+          "height": 1310,
           "width": "99%"
         },
         "props": {

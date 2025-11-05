@@ -20,7 +20,10 @@
                   "basis": "162px"
                 },
                 "props": {
-                  "source": "\n"
+                  "fit": {
+                    "mode": "fill"
+                  },
+                  "source": "/system/images/Screenshot 2025-10-26 123524.png"
                 },
                 "type": "ia.display.image"
               },
@@ -49,7 +52,7 @@
                   "name": "FlexContainer"
                 },
                 "position": {
-                  "basis": "1385px"
+                  "basis": "1326px"
                 },
                 "type": "ia.container.flex"
               },
@@ -134,7 +137,7 @@
                   "name": "FlexContainer_0"
                 },
                 "position": {
-                  "basis": "333px"
+                  "basis": "403px"
                 },
                 "props": {
                   "direction": "column"
@@ -196,7 +199,7 @@
                         "fontFamily": "inherit",
                         "fontSize": 15
                       },
-                      "target": "http://www.google.com"
+                      "target": "/periodic"
                     },
                     {
                       "enabled": true,

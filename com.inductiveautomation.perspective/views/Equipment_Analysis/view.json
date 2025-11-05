@@ -1786,17 +1786,17 @@
                               "$": [
                                 "ts",
                                 0,
-                                1761634883374
+                                1762366302383
                               ],
-                              "$ts": 1761634881434
+                              "$ts": 1762366297549
                             },
                             "rangeStartDate": {
                               "$": [
                                 "ts",
                                 0,
-                                1761634883374
+                                1762366302383
                               ],
-                              "$ts": 1761634403034
+                              "$ts": 1762365819149
                             },
                             "visibility": {
                               "buttons": {
@@ -2139,7 +2139,7 @@
                                   "name": "Label"
                                 },
                                 "position": {
-                                  "basis": "637px"
+                                  "basis": "569px"
                                 },
                                 "props": {
                                   "style": {
@@ -2159,7 +2159,7 @@
                                   "name": "Label_0"
                                 },
                                 "position": {
-                                  "basis": "122px"
+                                  "basis": "161px"
                                 },
                                 "propConfig": {
                                   "props.text": {
@@ -2216,7 +2216,7 @@
                                   "name": "Label"
                                 },
                                 "position": {
-                                  "basis": "645px"
+                                  "basis": "571px"
                                 },
                                 "props": {
                                   "style": {
@@ -2236,7 +2236,7 @@
                                   "name": "Label_0"
                                 },
                                 "position": {
-                                  "basis": "86px"
+                                  "basis": "158px"
                                 },
                                 "propConfig": {
                                   "props.text": {
@@ -2293,7 +2293,7 @@
                                   "name": "Label"
                                 },
                                 "position": {
-                                  "basis": "643px"
+                                  "basis": "567px"
                                 },
                                 "props": {
                                   "style": {
@@ -2313,7 +2313,7 @@
                                   "name": "Label_0"
                                 },
                                 "position": {
-                                  "basis": "111px"
+                                  "basis": "161px"
                                 },
                                 "propConfig": {
                                   "props.text": {
@@ -2370,7 +2370,7 @@
                                   "name": "Label"
                                 },
                                 "position": {
-                                  "basis": "644px"
+                                  "basis": "569px"
                                 },
                                 "props": {
                                   "style": {
@@ -2390,7 +2390,7 @@
                                   "name": "Label_0"
                                 },
                                 "position": {
-                                  "basis": "118px"
+                                  "basis": "182px"
                                 },
                                 "propConfig": {
                                   "props.text": {
@@ -2447,7 +2447,7 @@
                                   "name": "Label"
                                 },
                                 "position": {
-                                  "basis": "643px"
+                                  "basis": "568px"
                                 },
                                 "props": {
                                   "style": {
@@ -2467,7 +2467,7 @@
                                   "name": "Label_0"
                                 },
                                 "position": {
-                                  "basis": "105px"
+                                  "basis": "150px"
                                 },
                                 "propConfig": {
                                   "props.text": {

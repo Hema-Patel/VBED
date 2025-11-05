@@ -45,6 +45,24 @@
       "viewPath": "Equipment_Analysis"
     },
     "/periodic": {
+      "docks": {
+        "top": [
+          {
+            "anchor": "fixed",
+            "autoBreakpoint": 200,
+            "content": "auto",
+            "handle": "hide",
+            "iconUrl": "",
+            "id": "",
+            "modal": false,
+            "resizable": false,
+            "show": "auto",
+            "size": 125,
+            "viewParams": {},
+            "viewPath": "Topbar_menu"
+          }
+        ]
+      },
       "title": "",
       "viewPath": "Periodic_Comparison"
     }
